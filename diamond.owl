@@ -922,10 +922,10 @@
     <!-- nuclear:000106 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:000106">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label xml:lang="en">irradiated</rdfs:label>
+        <rdfs:label xml:lang="en">irradiated flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -957,6 +957,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+        <obo:IAO_0000115>Defines whether equipment is included in the plant design as part of plant nuclear safety.</obo:IAO_0000115>
         <obo:IAO_0000118>safety related, non-safety related, augmented quality</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">safety classification</rdfs:label>
@@ -4334,7 +4335,7 @@
         <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <obo:IAO_0000118>limiting condition of operation</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">lco flag</rdfs:label>
+        <rdfs:label xml:lang="en">LCO flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4540,6 +4541,7 @@
     <owl:DatatypeProperty rdf:about="nuclear:000837">
         <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <dc:creator>Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">tag deleted flag</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -4550,7 +4552,10 @@
     <owl:DatatypeProperty rdf:about="nuclear:000838">
         <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label>tech spec flag</rdfs:label>
+        <obo:IAO_0000115>Identifies equipment that is referenced in the technical specifications or would affect technical specifications if it fails.</obo:IAO_0000115>
+        <obo:IAO_0000118>tech spec flag</obo:IAO_0000118>
+        <dc:creator>Jeren Browning</dc:creator>
+        <rdfs:label>technical specification flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -6478,7 +6483,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <obo:IAO_0000115>Indicates whether the list should be made a table</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label xml:lang="en">make table</rdfs:label>
+        <rdfs:label xml:lang="en">make table indicator</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -6734,10 +6739,10 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001048 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001048">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <obo:IAO_0000115>Indicates whether the entity contains a damper list</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>damper list</rdfs:label>
+        <rdfs:label>damper list flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -6755,9 +6760,9 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001050 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001050">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>locking device</rdfs:label>
+        <rdfs:label>locking device flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -6805,9 +6810,9 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001056 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001056">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>line list</rdfs:label>
+        <rdfs:label>line list flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -6847,9 +6852,9 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001061 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001061">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>heat trace</rdfs:label>
+        <rdfs:label>heat trace flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -6965,9 +6970,9 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001086 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001086">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>experimenter guide</rdfs:label>
+        <rdfs:label>experimenter guide flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -7481,6 +7486,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001125">
         <rdfs:subPropertyOf rdf:resource="nuclear:001107"/>
+        <obo:IAO_0000115>A rating based on INPO document AP-913 to identify the relative importance of a piece of equipment to overall plant operation. While general industry guidance defines &quot;critical&quot; and &quot;noncritical&quot; equipment, individual plants/fleets can determine the classification system (ABC versus 123) and add categories (such as &quot;important noncritical&quot;) as desired.</obo:IAO_0000115>
         <obo:IAO_0000118>functional importance</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>equipment criticality</rdfs:label>
@@ -7491,9 +7497,10 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001126 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001126">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Identifies whether the equipment is included in the scope of the Nuclear Regulatory Commission Maintenance Rule (10 CFR 50.65) for the plant.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>maintenance rule</rdfs:label>
+        <rdfs:label>maintenance rule flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -7502,6 +7509,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001127">
         <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <obo:IAO_0000115>Mitigating systems performance index; identifies equipment associated with this Nuclear Regulatory Commission performance indicator.</obo:IAO_0000115>
         <obo:IAO_0000118>MSPI</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>mitigating systems performance indicator</rdfs:label>
@@ -7546,6 +7554,8 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001132">
         <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Identifies equipment that would cause a plant trip upon failure of the single piece of equipment alone.</obo:IAO_0000115>
+        <obo:IAO_0000118>SPV flag</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>single point vulnerability flag</rdfs:label>
     </owl:DatatypeProperty>
@@ -7556,6 +7566,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001133">
         <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Equipment that would require the electrical output of the plant to be reduced if it fails.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>power reduction flag</rdfs:label>
     </owl:DatatypeProperty>
@@ -7565,10 +7576,10 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001134 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001134">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
-        <obo:IAO_0000115>Indicates whether the equipment is related to the site&apos;s emergency plan.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Indicates whether the equipment is related to the site&apos;s emergency plan procedures.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>emergency plan</rdfs:label>
+        <rdfs:label>emergency plan flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -7577,6 +7588,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001135">
         <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Identifies equipment related to the plant fire protection system.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>fire protection flag</rdfs:label>
     </owl:DatatypeProperty>
@@ -7660,6 +7672,28 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>Identifies equipment that is related to the containment penetrations and could affect containment leak rate.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>10CFR 50 appendix j flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001143 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001143">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001009"/>
+        <obo:IAO_0000115>Identifies the basic category of equipment (pump, motor, gate valve, electrical breaker, etc.)</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>equipment type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001144 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001144">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000817"/>
+        <obo:IAO_0000115>A subset of the technical specifications flag, this identifies equipment that affects a shutdown LCO (limiting condition for operation) technical specification. A shutdown LCO may be defined differently and have a different time scale requirement depending on the plant.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>shutdown LCO flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -8644,6 +8678,18 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001142"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001143"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001144"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13606,6 +13652,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>&quot;Service water&quot;, &quot;Main turbine&quot;, &quot;Reactor coolant system&quot;, &quot;Electrical supply&quot;, &quot;Service air&quot;</obo:IAO_0000112>
         <obo:IAO_0000115>A system is an asset that is comprised of multiple material entities and focuses on a certain aspect or functionality for a given material entity.</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
@@ -14889,7 +14936,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000459">
         <rdfs:subClassOf rdf:resource="nuclear:000050"/>
-        <obo:IAO_0000115>A functional location code is an identifier that can be used to uniquely identify some asset according to its location.</obo:IAO_0000115>
+        <obo:IAO_0000115>A functional location code is an identifier that can be used to uniquely identify some asset according to its location (usually containing information about the specific unit, system, and equipment type).</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">FunctionalLocationCode</rdfs:label>
     </owl:Class>
