@@ -1,18 +1,15 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/idaholab/DIAMOND/diamond.owl:"
-     xml:base="https://github.com/idaholab/DIAMOND/diamond.owl:"
+<rdf:RDF xmlns="https://github.com/idaholab/DIAMOND/"
+     xml:base="https://github.com/idaholab/DIAMOND/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:obda="https://w3id.org/obda/vocabulary#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://github.com/idaholab/DIAMOND/diamond.owl">
-        <owl:versionIRI rdf:resource="https://github.com/idaholab/DIAMOND/diamond.owl"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/idaholab/DIAMOND/">
+        <owl:versionIRI rdf:resource="https://github.com/idaholab/DIAMOND/1.01"/>
         <obo:IAO_0000115>DIAMOND is a data model that interfaces to the various data sources and functionalities associated with nuclear to ensure a seamless flow of data and their methods.</obo:IAO_0000115>
         <dc:contributor>Ahmad Al Rashdan, INL</dc:contributor>
         <dc:contributor>Christopher Ritter, INL</dc:contributor>
@@ -687,6 +684,28 @@
     
 
 
+    <!-- nuclear:001071 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:001071">
+        <obo:IAO_0000115>Satisfied by is a relationship between requirements and also decisions, indicating some other entity that satisfies the restriction, demand, or objective imposed by the current entity.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label>satisfiedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- nuclear:001072 -->
+
+    <owl:ObjectProperty rdf:about="nuclear:001072">
+        <obo:IAO_0000115>Satisfies is a relationship between requirements and also decisions, indicating that this entity satisfies the restriction, demand, or objective imposed by some other entity.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:isDefinedBy>http://www.lifecyclemodeling.org/</rdfs:isDefinedBy>
+        <rdfs:label>satisfies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -938,6 +957,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+        <obo:IAO_0000118>safety related, non-safety related, augmented quality</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">safety classification</rdfs:label>
     </owl:DatatypeProperty>
@@ -3652,7 +3672,7 @@
     <!-- nuclear:000659 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:000659">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000854"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">forecasted start date</rdfs:label>
@@ -3663,7 +3683,7 @@
     <!-- nuclear:000660 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:000660">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000846"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">forecasted finish date</rdfs:label>
@@ -3674,7 +3694,7 @@
     <!-- nuclear:000661 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:000661">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000854"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">actual start date</rdfs:label>
@@ -3685,7 +3705,7 @@
     <!-- nuclear:000662 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:000662">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000846"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">actual finish date</rdfs:label>
@@ -4313,6 +4333,7 @@
     <owl:DatatypeProperty rdf:about="nuclear:000817">
         <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <obo:IAO_0000118>limiting condition of operation</obo:IAO_0000118>
         <rdfs:label xml:lang="en">lco flag</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -4562,7 +4583,6 @@
         <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
         <obo:IAO_0000115 xml:lang="en">Recorded completion date for an item</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Jacob Settle</obo:IAO_0000117>
         <dc:creator xml:lang="en">Jacob Settle</dc:creator>
         <rdfs:label xml:lang="en">completion date</rdfs:label>
     </owl:DatatypeProperty>
@@ -4587,7 +4607,6 @@
         <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
         <obo:IAO_0000115 xml:lang="en">Due date for an item</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Jacob Settle</obo:IAO_0000117>
         <dc:creator xml:lang="en">Jacob Settle</dc:creator>
         <rdfs:label xml:lang="en">due date</rdfs:label>
     </owl:DatatypeProperty>
@@ -6578,6 +6597,1073 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
+    <!-- nuclear:001033 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001033">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>design in progress</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001036 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001036">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>seismic design category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001038 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001038">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <obo:IAO_0000118>EQ</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>equipment qualification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001039 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001039">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <obo:IAO_0000118>PAM</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>post accident monitoring</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001040 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001040">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <obo:IAO_0000118>American Society of Mechanical Engineers</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>ASME classification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001042 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001042">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>reliability classification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001043 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001043">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>east</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>north</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>south</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>west</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>column</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001044 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001044">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>equipment rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001045 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001045">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000115>Method by which the entity was added to the external system</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>method of addition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001047 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001047">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <obo:IAO_0000115>Indicates whether the entity contains a valve list</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>valve list</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001048 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001048">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <obo:IAO_0000115>Indicates whether the entity contains a damper list</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>damper list</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001049 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001049">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>diameter</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001050 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001050">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>locking device</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001051 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001051">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>operator type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001052 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001052">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>actuator type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001054 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001054">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>line number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001055 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001055">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>end preparation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001056 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001056">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>line list</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001057 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001057">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>speciality list</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001058 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001058">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <obo:IAO_0000115>Measured in sq ft</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>free area</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001060 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001060">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <obo:IAO_0000115>For entities such as insulation, measured in inches.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>thickness</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001061 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001061">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>heat trace</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001062 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001062">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>special requirements</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001079 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001079">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000961"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>primary text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001080 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001080">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000115>Justification for why some artifact exists.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>basis</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001081 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001081">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000115>Contains the decomposition of some plant requirements to a given discipline.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>discipline allocation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001082 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001082">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>mandatory</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>tbd</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>voluntary</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <obo:IAO_0000118>c&amp;s category</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>code and standard category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001083 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001083">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000118>cor section</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>code of record section</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001084 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001084">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>customer-specified</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001085 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001085">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000118>document MPL</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>document master parts list</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001086 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001086">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>experimenter guide</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001087 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001087">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>heading type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001088 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001088">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>regulation and order phase</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001089 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001089">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>reconciliation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001090 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001090">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>requirement safety classification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001091 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001091">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <obo:IAO_0000115>Indicates the level that traceability will occur for the artifact.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>trace method</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001092 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001092">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <obo:IAO_0000115>The master parts list of the system (singular) that a system or component requirement applies to.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>system allocation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001093 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001093">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>verification method</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001094 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001094">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>verification criteria</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001096 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001096">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000854"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>planned start date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001097 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001097">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000846"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>planned finish date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001098 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001098">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000495"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>planned duration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001099 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001099">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000495"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>at completion duraiton</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001100 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001100">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000477"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>object id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001101 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001101">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000477"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>project id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001102 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001102">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000461"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>A unique identifier for a condition report.</obo:IAO_0000115>
+        <obo:IAO_0000118>Issue ID</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>condition report number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001103 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001103">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>origination date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001104 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001104">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000477"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>facility id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001105 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001105">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>CTAT</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>CTEQIM</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>CTMOC</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>CTNA</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>CTPMN</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>CTPMO</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>CTT</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>QIM</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <obo:IAO_0000115>The result given to a condition report after being sent to the screening team.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>screening disposition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001106 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001106">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>A</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>B</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>C</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>N</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <obo:IAO_0000115>How urgent a response to the condition is.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>condition priority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001107 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001107">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <obo:IAO_0000115>Defines reportability and how the issue relates to technical specification actions.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>criticality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001108 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001108">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000877"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>primary trend</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001109 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001109">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000877"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>secondary trend</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001110 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001110">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000877"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>tertiary trend</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001111 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001111">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>cause</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001112 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001112">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001111"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>primary cause</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001113 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001113">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001111"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>secondary cause</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001114 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001114">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001111"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>tertiary cause</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001115 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001115">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <obo:IAO_0000115>Indicates whether the condition was reviewed by the senior reactor operator (SRO).</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>reviewed by SRO</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001116 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001116">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000988"/>
+        <obo:IAO_0000115>A category assigned to the condition by the senior reactor operator (SRO).</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>SRO review category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001117 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001117">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000961"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>consequence text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001118 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001118">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>severity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001119 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001119">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001118"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>HIGH</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>LOW</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>MEDIUM</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>consequence severity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001120 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001120">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>operability determination</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001121 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001121">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000719"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>Notes entered by either the manager or a CAP committee when the issue was marked completed.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>completion note</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001122 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001122">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000115>Recommendations by the initiator of the condition.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>recommendation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001124 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001124">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000921"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>action taken to resolve issue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001125 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001125">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001107"/>
+        <obo:IAO_0000118>functional importance</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>equipment criticality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001126 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001126">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>maintenance rule</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001127 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001127">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <obo:IAO_0000118>MSPI</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>mitigating systems performance indicator</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001128 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001128">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000817"/>
+        <obo:IAO_0000115>An LCO which leads to plant shutdown if uncorrected.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>forced outage flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001129 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001129">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000468"/>
+        <obo:IAO_0000115>The name given to a system within a specific plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>site name</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>plant system name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001130 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001130">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000468"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>common system name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001132 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001132">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>single point vulnerability flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001133 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001133">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>power reduction flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001134 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001134">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <obo:IAO_0000115>Indicates whether the equipment is related to the site&apos;s emergency plan.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>emergency plan</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001135 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001135">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>fire protection flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001136 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001136">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Identifies equipment used as backup power during a station blackout.</obo:IAO_0000115>
+        <obo:IAO_0000118>SBO</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>station blackout flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001137 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001137">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Indicates equipment that is part of instrumentation for assessing conditions during an accident scenario.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>reg guide 1.97 flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001138 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001138">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Indicates the equipment may be used for flexible response to site accidents.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>flex flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001139 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001139">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Identifies digital equipment with the potential to be compromised by a cyber attack and impact plant operations.</obo:IAO_0000115>
+        <obo:IAO_0000118>critical digital asset</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>cyber security flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001140 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001140">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Identifes equipment that has associated technical specifications for required frequency of qualifying inspections of equipment.</obo:IAO_0000115>
+        <obo:IAO_0000118>ISI flag</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>in-service inspection flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001141 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001141">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Identifes equipment that has associated technical specifications for required frequency of qualified testing of equipment.</obo:IAO_0000115>
+        <obo:IAO_0000118>IST flag</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>in-service testing flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001142 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001142">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Identifies equipment that is related to the containment penetrations and could affect containment leak rate.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>10CFR 50 appendix j flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -6707,6 +7793,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000468"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000590"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -6789,6 +7881,48 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000134"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000278"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000279"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000280"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000281"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000468"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000477"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">digital artifacts, such as the pdf on your laptop</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information entity [BFO:generically dependent continuant] is a non-temporal entiy [BFO:continuant] that depends on one or more other entities. (BFO definition)</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
@@ -6871,11 +8005,28 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001079"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity is an information entiy [BFO:generically dependent continuant] that contains some data and relies on some other entiy (typically an information entity) for its existence and/or access.</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:label xml:lang="en">InformationContentEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/nuclear:000703 -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/nuclear:000703">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115>Object roles may relate to most physical entities that are not either a person or organization.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label xml:lang="en">ObjectRole</rdfs:label>
     </owl:Class>
     
 
@@ -7210,8 +8361,56 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000133"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000420"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000133"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000766"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000185"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000185"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000120"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000185"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000737"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000185"/>
+                <owl:someValuesFrom rdf:resource="nuclear:001034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000217"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000050"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7222,8 +8421,32 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000664"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000218"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000122"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000310"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000002"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7276,6 +8499,156 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000838"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001033"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001036"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001038"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001039"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001040"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001042"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001043"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001044"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001045"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001125"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001126"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001127"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001128"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001132"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001133"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001134"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001135"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001136"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001137"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001138"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001139"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001140"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001141"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001142"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000123"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -7318,7 +8691,73 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="nuclear:000026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000273"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000380"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000593"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001009"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001047"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001048"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001050"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001051"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001052"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001054"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001055"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7609,20 +9048,8 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000283"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7734,12 +9161,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="nuclear:000049"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000150"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -7772,12 +9193,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000588"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000961"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A description is a label that provides additional information about some asset.</obo:IAO_0000115>
@@ -7834,12 +9249,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000477"/>
@@ -8230,7 +9639,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000365"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8241,30 +9650,8 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000278"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000279"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000280"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000281"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:onProperty rdf:resource="nuclear:001079"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8381,7 +9768,13 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000184"/>
-                <owl:someValuesFrom rdf:resource="nuclear:000125"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000184"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000274"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8392,90 +9785,264 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000398"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000294"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000725"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000123"/>
+                <owl:onProperty rdf:resource="nuclear:001102"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001103"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000123"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000329"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000405"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000811"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000815"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000841"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000843"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000844"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000858"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000859"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000868"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000870"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000935"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000949"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000955"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000858"/>
+                <owl:onProperty rdf:resource="nuclear:000972"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001104"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001105"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001106"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001107"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001108"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001109"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001110"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001112"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001113"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001114"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001115"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001116"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001117"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001119"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001120"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001121"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001122"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001124"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -9108,7 +10675,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:000098 -->
 
     <owl:Class rdf:about="nuclear:000098">
-        <rdfs:subClassOf rdf:resource="nuclear:000703"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/nuclear:000703"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000294"/>
@@ -9495,6 +11062,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000117">
         <rdfs:subClassOf rdf:resource="nuclear:000125"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An organizational asset is a logical grouping of persons and possibly other material entities.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">OrganizationalAsset</rdfs:label>
@@ -9508,13 +11081,25 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
+                <owl:onProperty rdf:resource="nuclear:001009"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
+                <owl:onProperty rdf:resource="nuclear:001079"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001080"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001087"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9530,6 +11115,36 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000119">
         <rdfs:subClassOf rdf:resource="nuclear:000118"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001081"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001084"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001086"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001093"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001094"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="nuclear:000398"/>
         <obo:IAO_0000112>Pump shall weigh no more than 1.2 kilograms</obo:IAO_0000112>
         <obo:IAO_0000115>Identifies a capability, characteristic, or quality factor of a system that must exist for the system to have value and utility to the user. (LML definition)</obo:IAO_0000115>
@@ -9544,18 +11159,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000120">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112>Requirements Report</obo:IAO_0000112>
         <obo:IAO_0000115>Specifies a document or other source of information that is referenced by or generated in the knowledge base. (LML definition)</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
@@ -9657,7 +11260,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:000126 -->
 
     <owl:Class rdf:about="nuclear:000126">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="nuclear:000026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000033"/>
@@ -9666,21 +11269,8 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000343"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112>Pipe, cable</obo:IAO_0000112>
@@ -10200,13 +11790,49 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000380"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000546"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:001059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001056"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001061"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001062"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11532,12 +13158,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000906"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
@@ -11695,12 +13315,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000423"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11980,6 +13594,18 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="nuclear:000125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:001131"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001129"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A system is an asset that is comprised of multiple material entities and focuses on a certain aspect or functionality for a given material entity.</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
@@ -12053,13 +13679,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000142"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -12145,6 +13764,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000320">
         <rdfs:subClassOf rdf:resource="nuclear:000086"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000184"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000588"/>
@@ -12332,7 +13957,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:000346 -->
 
     <owl:Class rdf:about="nuclear:000346">
-        <rdfs:subClassOf rdf:resource="nuclear:000703"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/nuclear:000703"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000184"/>
@@ -12680,6 +14305,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001049"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Dimensions is a quality that indicates the size of a structure or some other object.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Dimensions</rdfs:label>
@@ -12775,7 +14406,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:000387 -->
 
     <owl:Class rdf:about="nuclear:000387">
-        <rdfs:subClassOf rdf:resource="nuclear:000703"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/nuclear:000703"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000184"/>
@@ -12799,7 +14430,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:000388 -->
 
     <owl:Class rdf:about="nuclear:000388">
-        <rdfs:subClassOf rdf:resource="nuclear:000703"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/nuclear:000703"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000184"/>
@@ -12915,13 +14546,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000280"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000961"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -13097,12 +14721,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000329"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -13139,6 +14757,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000420">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000010"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000218"/>
@@ -13218,12 +14842,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000457"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
@@ -13232,12 +14850,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000458"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Specifies the combined probability and consequence in achieving objectives. (LML definition)</obo:IAO_0000115>
@@ -13253,18 +14865,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000448">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>An opportunity is a circumstance with the potential for some benefit.</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
@@ -13289,12 +14889,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000459">
         <rdfs:subClassOf rdf:resource="nuclear:000050"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>A functional location code is an identifier that can be used to uniquely identify some asset according to its location.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">FunctionalLocationCode</rdfs:label>
@@ -13954,12 +15548,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="nuclear:000049"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000477"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -14233,12 +15821,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000477"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -14301,18 +15883,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000477"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -14333,18 +15903,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000184"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -14415,12 +15973,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000477"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -14459,18 +16011,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000184"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -14519,12 +16059,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000184"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000103"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -14590,12 +16124,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000184"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -15126,20 +16654,50 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:000649 -->
 
     <owl:Class rdf:about="nuclear:000649">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="nuclear:000086"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
+                <owl:onProperty rdf:resource="nuclear:000719"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
+                <owl:onProperty rdf:resource="nuclear:000972"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A standard is a data item that is owned and maintained by some organization (internal or external to a nuclear reactor facility) and used as a reference by some material entity or process.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001080"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001081"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001082"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001083"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001091"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A standard is a document that is owned and maintained by some organization (internal or external to a nuclear reactor facility) and used as a reference by some material entity or process.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Standard</rdfs:label>
     </owl:Class>
@@ -15287,6 +16845,18 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001099"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001100"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An actual action is an instance of a planned action that includes start and end time properties, generally used for scheduling and ordered, time-constrained processes.</obo:IAO_0000115>
         <obo:IAO_0000118>action instance</obo:IAO_0000118>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/schedule_profile"/>
@@ -15304,6 +16874,23 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/equipment_performance_testing_profile"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Testing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- nuclear:000664 -->
+
+    <owl:Class rdf:about="nuclear:000664">
+        <rdfs:subClassOf rdf:resource="nuclear:000050"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000477"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A VendorID is an Identifier that stores an identification string and the matching name of the vendor or system for which the identifier is used.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>VendorID</rdfs:label>
     </owl:Class>
     
 
@@ -15403,12 +16990,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000329"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -15416,12 +16997,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000330"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -15535,6 +17110,48 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000690">
         <rdfs:subClassOf rdf:resource="nuclear:000129"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000329"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000846"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000854"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001096"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001097"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001098"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001101"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A planned action is an action that may be used as a template for an action that may be repeated multiple times.</obo:IAO_0000115>
         <obo:IAO_0000118>action template</obo:IAO_0000118>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/schedule_profile"/>
@@ -15672,17 +17289,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>Organization roles include roles which relate to the organizational asset class and its subclasses.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">OrganizationalRole</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- nuclear:000703 -->
-
-    <owl:Class rdf:about="nuclear:000703">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115>Object roles may relate to most physical entities that are not either a person or organization.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label xml:lang="en">ObjectRole</rdfs:label>
     </owl:Class>
     
 
@@ -16765,6 +18371,12 @@ November 2004</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="nuclear:000086"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000184"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000185"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000727"/>
             </owl:Restriction>
@@ -17204,12 +18816,6 @@ Canceled</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000281"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -17256,23 +18862,9 @@ Canceled</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000293"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000468"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification of a document stored in a plant&apos;s Document Management System. This classification is typically used to define meta-properties for the documents in the classification.</obo:IAO_0000115>
@@ -17324,13 +18916,6 @@ Canceled</rdfs:comment>
 
     <owl:Class rdf:about="nuclear:000749">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000936"/>
@@ -17399,13 +18984,6 @@ Canceled</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000943"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -17467,13 +19045,6 @@ A correlating record for a stock code / warehouse combination must exist before 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000590"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -17522,13 +19093,6 @@ A correlating record for a stock code / warehouse combination must exist before 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000951"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -17552,13 +19116,6 @@ Maintenance of active vendors ensures that orders are placed with active vendors
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000184"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000769"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -17873,13 +19430,6 @@ Maintenance of active vendors ensures that orders are placed with active vendors
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000134"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000833"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -18175,6 +19725,12 @@ Maintenance of active vendors ensures that orders are placed with active vendors
 
     <owl:Class rdf:about="nuclear:000766">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000010"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Elevation is a one-dimensional spatial region that indicates the height of some entity relative to some reference point.</obo:IAO_0000115>
         <dc:creator>Jim Gracely</dc:creator>
         <rdfs:label>Elevation</rdfs:label>
@@ -19455,6 +21011,178 @@ Maintenance of active vendors ensures that orders are placed with active vendors
     
 
 
+    <!-- nuclear:001034 -->
+
+    <owl:Class rdf:about="nuclear:001034">
+        <rdfs:subClassOf rdf:resource="nuclear:000320"/>
+        <obo:IAO_0000115>A piping and instrumentation diagram shows the connection of process equipment and instrumentation within a nuclear reactor facility.</obo:IAO_0000115>
+        <obo:IAO_0000118>P&amp;ID</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>PipingAndInstrumentationDiagram</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- nuclear:001035 -->
+
+    <owl:Class rdf:about="nuclear:001035">
+        <rdfs:subClassOf rdf:resource="nuclear:000320"/>
+        <obo:IAO_0000115>A logic diagram is a document that displays logical relationships between project activities.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>LogicDiagram</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- nuclear:001041 -->
+
+    <owl:Class rdf:about="nuclear:001041">
+        <rdfs:subClassOf rdf:resource="nuclear:000049"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000988"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- nuclear:001059 -->
+
+    <owl:Class rdf:about="nuclear:001059">
+        <rdfs:subClassOf rdf:resource="nuclear:000131"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000507"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001060"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>Insulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- nuclear:001073 -->
+
+    <owl:Class rdf:about="nuclear:001073">
+        <rdfs:subClassOf rdf:resource="nuclear:000649"/>
+        <obo:IAO_0000115>A code is a standard that applies to a given domain or entity.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>Code</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- nuclear:001074 -->
+
+    <owl:Class rdf:about="nuclear:001074">
+        <rdfs:subClassOf rdf:resource="nuclear:000118"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001081"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001086"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001092"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A decision is a statement that is used to form or decompose some requirement.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>Decision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- nuclear:001075 -->
+
+    <owl:Class rdf:about="nuclear:001075">
+        <rdfs:subClassOf rdf:resource="nuclear:000649"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001088"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A regulation is a standard that is enforced by some legal entity.</obo:IAO_0000115>
+        <obo:IAO_0000118>Order</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>Regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- nuclear:001076 -->
+
+    <owl:Class rdf:about="nuclear:001076">
+        <rdfs:subClassOf rdf:resource="nuclear:000086"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001081"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001091"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A customer decision document is a document that contains the formally issued decision documents from a customer.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>CustomerDecisionDocument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- nuclear:001131 -->
+
+    <owl:Class rdf:about="nuclear:001131">
+        <rdfs:subClassOf rdf:resource="nuclear:000049"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000151"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001130"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An EIISName is a label that is given to some asset in order to identify it as a member of an EIIS code or category.</obo:IAO_0000115>
+        <obo:IAO_0000118>Energy Industry Identification System Name</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>EIISName</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -19485,6 +21213,14 @@ Maintenance of active vendors ensures that orders are placed with active vendors
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/nuclear:000703"/>
+            <rdf:Description rdf:about="nuclear:000701"/>
+            <rdf:Description rdf:about="nuclear:000702"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="nuclear:000026"/>
             <rdf:Description rdf:about="nuclear:000103"/>
             <rdf:Description rdf:about="nuclear:000107"/>
@@ -19504,14 +21240,6 @@ Maintenance of active vendors ensures that orders are placed with active vendors
             <rdf:Description rdf:about="nuclear:000311"/>
             <rdf:Description rdf:about="nuclear:000513"/>
             <rdf:Description rdf:about="nuclear:000536"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="nuclear:000701"/>
-            <rdf:Description rdf:about="nuclear:000702"/>
-            <rdf:Description rdf:about="nuclear:000703"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
