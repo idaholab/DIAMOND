@@ -4271,7 +4271,7 @@
         <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <obo:IAO_0000115>Boolean variable that keeps track of whether or not immediate action is required for a condition report</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Jacob Settle</obo:IAO_0000117>
+        <dc:creator xml:lang="en">Jacob Settle</dc:creator>
         <rdfs:label>immediate action required flag</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -4313,7 +4313,7 @@
         <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <obo:IAO_0000115 xml:lang="en">boolean yes / no indicating if an issue that triggered a condition report is corrected or not</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Jacob Settle</obo:IAO_0000117>
+        <dc:creator xml:lang="en">Jacob Settle</dc:creator>
         <rdfs:label>issue corrected flag</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -4821,7 +4821,7 @@
             </rdfs:Datatype>
         </rdfs:range>
         <obo:IAO_0000115>Categories for a reported condition</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Jacob Settle</obo:IAO_0000117>
+        <dc:creator xml:lang="en">Jacob Settle</dc:creator>
         <rdfs:label>condition significance</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -5663,8 +5663,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <owl:DatatypeProperty rdf:about="nuclear:000935">
         <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <obo:IAO_0000115 xml:lang="en">Immediate action taken upon discovery of a Condition</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Jacob Settle</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Immediate action taken upon discovery of a Condition and entered by the condition initiator.</obo:IAO_0000115>
         <dc:creator xml:lang="en">Jacob Settle</dc:creator>
         <rdfs:label xml:lang="en">immediate action taken</rdfs:label>
     </owl:DatatypeProperty>
@@ -6616,6 +6615,30 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001036">
         <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Category 1</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Category 2</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Category 3</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <obo:IAO_0000115>Identification of how a piece of equipment must perform during and after the occurrence of an earthquake event to support nuclear safety functions.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>seismic design category</rdfs:label>
     </owl:DatatypeProperty>
@@ -6636,10 +6659,11 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001039 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001039">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
-        <obo:IAO_0000118>PAM</obo:IAO_0000118>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Indicates equipment that is part of instrumentation for assessing conditions during an accident scenario.</obo:IAO_0000115>
+        <obo:IAO_0000118>PAM; reg guide 1.97 flag</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>post accident monitoring</rdfs:label>
+        <rdfs:label>post accident monitoring flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -7137,6 +7161,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <owl:DatatypeProperty rdf:about="nuclear:001103">
         <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <obo:IAO_0000115>The date the condition report is entered into the system (not necessarily the date that the issue happened or was discovered).</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>origination date</rdfs:label>
     </owl:DatatypeProperty>
@@ -7296,6 +7321,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001108">
         <rdfs:subPropertyOf rdf:resource="nuclear:000877"/>
+        <obo:IAO_0000115>A code identifying the primary aspect of an event leading to a condition report (reference INPO 07-007).</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>primary trend</rdfs:label>
     </owl:DatatypeProperty>
@@ -7306,6 +7332,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001109">
         <rdfs:subPropertyOf rdf:resource="nuclear:000877"/>
+        <obo:IAO_0000115>A code identifying the secondary aspect of an event leading to a condition report (reference INPO 07-007).</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>secondary trend</rdfs:label>
     </owl:DatatypeProperty>
@@ -7316,6 +7343,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001110">
         <rdfs:subPropertyOf rdf:resource="nuclear:000877"/>
+        <obo:IAO_0000115>A code identifying the tertiary aspect of an event leading to a condition report (reference INPO 07-007).</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>tertiary trend</rdfs:label>
     </owl:DatatypeProperty>
@@ -7336,6 +7364,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001112">
         <rdfs:subPropertyOf rdf:resource="nuclear:001111"/>
+        <obo:IAO_0000115>A code identifying the primary cause of a condition (reference INPO 07-007).</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>primary cause</rdfs:label>
     </owl:DatatypeProperty>
@@ -7346,6 +7375,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001113">
         <rdfs:subPropertyOf rdf:resource="nuclear:001111"/>
+        <obo:IAO_0000115>A code identifying the secondary cause of a condition (reference INPO 07-007).</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>secondary cause</rdfs:label>
     </owl:DatatypeProperty>
@@ -7356,6 +7386,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001114">
         <rdfs:subPropertyOf rdf:resource="nuclear:001111"/>
+        <obo:IAO_0000115>A code identifying the tertiary cause of a condition (reference INPO 07-007).</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>tertiary cause</rdfs:label>
     </owl:DatatypeProperty>
@@ -7476,6 +7507,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001124">
         <rdfs:subPropertyOf rdf:resource="nuclear:000921"/>
+        <obo:IAO_0000115>Any action taken to resolve the condition subsequent to condition report initiation outside of formal actions generated in the CAP process.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>action taken to resolve issue</rdfs:label>
     </owl:DatatypeProperty>
@@ -7607,17 +7639,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
-    <!-- nuclear:001137 -->
-
-    <owl:DatatypeProperty rdf:about="nuclear:001137">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
-        <obo:IAO_0000115>Indicates equipment that is part of instrumentation for assessing conditions during an accident scenario.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>reg guide 1.97 flag</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- nuclear:001138 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001138">
@@ -7694,6 +7715,63 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>A subset of the technical specifications flag, this identifies equipment that affects a shutdown LCO (limiting condition for operation) technical specification. A shutdown LCO may be defined differently and have a different time scale requirement depending on the plant.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>shutdown LCO flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001145 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001145">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000115>An alternate method for grouping equipment, similar to System, for purposes of maintenance or testing.</obo:IAO_0000115>
+        <obo:IAO_0000118>Ops system</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>functional equipment group</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001146 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001146">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>A</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>B</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>None</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <obo:IAO_0000115>Identifies the safety train to which the equipment belongs.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>safety train</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001147 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001147">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Indicates whether the equipment is inspected on some periodic frequency as part of the license renewal aging management program.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>aging management flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -8503,6 +8581,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000123"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000306"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
@@ -8647,12 +8731,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001137"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001138"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
@@ -8691,13 +8769,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001144"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000123"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An equipment is an asset that has some identifier and is used within the nuclear reactor facility as part of some process or function.</obo:IAO_0000115>
@@ -17677,8 +17748,8 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Measure taken to identify, document, evaluate, trend and rectify conditions adverse to quality and, where necessary, to prevent recurrence</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Jacob Settle</obo:IAO_0000117>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/condition_reporting_profile"/>
+        <dc:creator xml:lang="en">Jacob Settle</dc:creator>
         <rdfs:label xml:lang="en">CorrectiveAction</rdfs:label>
     </owl:Class>
     
