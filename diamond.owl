@@ -3419,7 +3419,7 @@
             </rdfs:Datatype>
         </rdfs:range>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label xml:lang="en">unit of measurement</rdfs:label>
+        <rdfs:label xml:lang="en">measurement unit</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -8973,6 +8973,173 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
+    <!-- nuclear:001288 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001288">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000477"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>data source id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001289 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001289">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000477"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>import id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001290 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001290">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000477"/>
+        <obo:IAO_0000115>The ID of a node within a graph or graph database.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>node id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001291 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001291">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000477"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>original data id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001292 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001292">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000468"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>metatype name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001293 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001293">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>received</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001294 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001294">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001268"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>pu-239 mass</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001295 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001295">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001236"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>variable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001296 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001296">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001236"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>parameter</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001298 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001298">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001236"/>
+        <obo:IAO_0000115>Identifier for some part of the input to a multiphysics simulation.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>node</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001299 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001299">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000477"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>reactor map id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001300 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001300">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000719"/>
+        <obo:IAO_0000115>Additional notes entered by either the person that created the condition or any person in the work flow before screening.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>issue note</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001301 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001301">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000151"/>
+        <obo:IAO_0000115>Common set of codes that are used to group condition reports of similar causes or nature.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>trending code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001302 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001302">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000477"/>
+        <obo:IAO_0000115>The ID for an object sent as a response to some object identified by an original data ID.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>response data id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001303 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001303">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Indicates whether a document has been locked for editing (true).</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>document lock flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001304 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001304">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <obo:IAO_0000115>The number of iterations to perform for some activity or process.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>iteration count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -9470,6 +9637,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000278"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000356"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -9502,6 +9675,18 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001270"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001294"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001299"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A reactor is an equipment that contains a number of children assets necessary to create a stable and contained nuclear fission process.</obo:IAO_0000115>
@@ -10749,6 +10934,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000065">
         <rdfs:subClassOf rdf:resource="nuclear:000348"/>
+        <obo:IAO_0000115>Uranium 234 is an isotope of uranium that occurs as an indirect decay product of uranium 238.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Uranium234</rdfs:label>
     </owl:Class>
@@ -11189,6 +11375,18 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001165"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001300"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001301"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -12850,6 +13048,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000140">
         <rdfs:subClassOf rdf:resource="nuclear:000234"/>
+        <obo:IAO_0000115>Oil is a liquid that is derived from petroleum.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Oil</rdfs:label>
     </owl:Class>
@@ -13763,6 +13962,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000212">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Silver is a chemical element with the atomic number 47. It is a shiny gray-white metal.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Silver</rdfs:label>
     </owl:Class>
@@ -13773,6 +13973,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000213">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Indium is a chemical element with the atomic number 49. It is a soft silvery-white metal.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Indium</rdfs:label>
     </owl:Class>
@@ -13783,6 +13984,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000214">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Cadmium is a chemical element with the atomic number 48. It is a silvery-white metal.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Cadmium</rdfs:label>
     </owl:Class>
@@ -13793,6 +13995,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000215">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Boron is a chemical element with the atomic number 5. It is a nonmetallic solid.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Boron</rdfs:label>
     </owl:Class>
@@ -13803,6 +14006,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000216">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Cobalt is a chemical element with the atomic number 27. It is a hard silvery-white magnetic metal.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Cobalt</rdfs:label>
     </owl:Class>
@@ -13897,6 +14101,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000228">
         <rdfs:subClassOf rdf:resource="nuclear:000227"/>
+        <obo:IAO_0000115>Air is a gas that surrounds the earth, primarily a mixture of oxygen and nitrogen.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Air</rdfs:label>
     </owl:Class>
@@ -13907,6 +14112,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000229">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Hydrogen is a chemical element with the atomic number 1. It is an odorless and highly flammable gas.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Hydrogen</rdfs:label>
     </owl:Class>
@@ -13917,6 +14123,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000230">
         <rdfs:subClassOf rdf:resource="nuclear:000227"/>
+        <obo:IAO_0000115>Steam is a gas that water is converted into when heated.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Steam</rdfs:label>
     </owl:Class>
@@ -13938,6 +14145,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000232">
         <rdfs:subClassOf rdf:resource="nuclear:000231"/>
+        <obo:IAO_0000115>Helium is a chemical element with the atomic number 2. It is an inert gas.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Helium</rdfs:label>
     </owl:Class>
@@ -13948,6 +14156,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000233">
         <rdfs:subClassOf rdf:resource="nuclear:000227"/>
+        <obo:IAO_0000115>Carbon dioxide is a colorless and oderless gas.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">CarbonDioxide</rdfs:label>
     </owl:Class>
@@ -13969,6 +14178,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000235">
         <rdfs:subClassOf rdf:resource="nuclear:000234"/>
+        <obo:IAO_0000115>Water is a liquid that is colorless, transparent, and odorless.</obo:IAO_0000115>
         <obo:IAO_0000118>light water</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Water</rdfs:label>
@@ -13997,6 +14207,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000237">
         <rdfs:subClassOf rdf:resource="nuclear:000140"/>
+        <obo:IAO_0000115>Mineral oil is a distillation product of petroleum or oil.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">MineralOil</rdfs:label>
     </owl:Class>
@@ -14167,6 +14378,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000250">
         <rdfs:subClassOf rdf:resource="nuclear:000259"/>
+        <obo:IAO_0000115>Oxide fuel is a ceramic fuel that is based on the metal oxide.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">OxideFuel</rdfs:label>
     </owl:Class>
@@ -14177,6 +14389,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000251">
         <rdfs:subClassOf rdf:resource="nuclear:000250"/>
+        <obo:IAO_0000115>Uranium dioxide is an oxide fuel that is a black semiconducting solid made from heating uranyl nitrate.</obo:IAO_0000115>
         <obo:IAO_0000118>UOX fuel</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">UraniumDioxide</rdfs:label>
@@ -14188,6 +14401,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000252">
         <rdfs:subClassOf rdf:resource="nuclear:000250"/>
+        <obo:IAO_0000115>Mixed oxide is an oxide fuel that is composed of a blend of plutonium and depleted uranium.</obo:IAO_0000115>
         <obo:IAO_0000118>MOX fuel</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">MixedOxide</rdfs:label>
@@ -14199,6 +14413,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000253">
         <rdfs:subClassOf rdf:resource="nuclear:000249"/>
+        <obo:IAO_0000115>Metal fuel is a nuclear fuel that is derived from metal-based compounds.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">MetalFuel</rdfs:label>
     </owl:Class>
@@ -14209,6 +14424,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000255">
         <rdfs:subClassOf rdf:resource="nuclear:000253"/>
+        <obo:IAO_0000115>Actinide fuel is a metal fuel composed of certain metallic elements.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">ActinideFuel</rdfs:label>
     </owl:Class>
@@ -14219,6 +14435,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000256">
         <rdfs:subClassOf rdf:resource="nuclear:000253"/>
+        <obo:IAO_0000115>Molten plutonium is a metal fuel derived from molten plutnoium alloyed with other metals.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">MoltenPlutonium</rdfs:label>
     </owl:Class>
@@ -14229,6 +14446,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000257">
         <rdfs:subClassOf rdf:resource="nuclear:000249"/>
+        <obo:IAO_0000115>Liquid fuel is a nuclear fuel composed primarily of liquid substances.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">LiquidFuel</rdfs:label>
     </owl:Class>
@@ -14239,6 +14457,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000258">
         <rdfs:subClassOf rdf:resource="nuclear:000257"/>
+        <obo:IAO_0000115>Molten salt is a liquid fuel that is composed of molten salt and other liquid chemical elements.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">MoltenSalt</rdfs:label>
     </owl:Class>
@@ -14249,6 +14468,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000259">
         <rdfs:subClassOf rdf:resource="nuclear:000249"/>
+        <obo:IAO_0000115>Ceramic fuel is a nuclear fuel based around ceramic electrolyte material.</obo:IAO_0000115>
         <obo:IAO_0000118>Non-oxide ceramic fuel</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">CeramicFuel</rdfs:label>
@@ -14260,6 +14480,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000260">
         <rdfs:subClassOf rdf:resource="nuclear:000259"/>
+        <obo:IAO_0000115>Uranium nitride is a ceramic fuel that is composed of certain uranium-based ceramic materials.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">UraniumNitride</rdfs:label>
     </owl:Class>
@@ -14270,6 +14491,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000261">
         <rdfs:subClassOf rdf:resource="nuclear:000259"/>
+        <obo:IAO_0000115>Uranium carbide is a ceramic fuel that is made from a hard refractory ceramic material.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">UraniumCarbide</rdfs:label>
     </owl:Class>
@@ -15090,6 +15312,54 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000329"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001288"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001289"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001290"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001291"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001292"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001293"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001302"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An event is an information content entity that contains data points of interest for a certain entiy at some time.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Event</rdfs:label>
@@ -15251,6 +15521,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000338">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Xenon is a chemical element with the atomic number 54. It is a dense odorless gas.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Xenon</rdfs:label>
     </owl:Class>
@@ -15343,6 +15614,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000345">
         <rdfs:subClassOf rdf:resource="nuclear:000344"/>
+        <obo:IAO_0000115>Boric acid is a soluble poison that is a weakly acid crystalline compound derived from borax.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">BoricAcid</rdfs:label>
     </owl:Class>
@@ -15381,6 +15653,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000348">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Uranium is a chemical element with the atomic number 92. It is a dense gray radioactive metal.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Uranium</rdfs:label>
     </owl:Class>
@@ -15391,6 +15664,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000349">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Plutonium is a chemical element with the atomic number 94. It is a dense radioactive metal.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Plutonium</rdfs:label>
     </owl:Class>
@@ -15401,6 +15675,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000350">
         <rdfs:subClassOf rdf:resource="nuclear:000348"/>
+        <obo:IAO_0000115>Uranium 235 is a fissile isotope of uranium.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Uranium235</rdfs:label>
     </owl:Class>
@@ -15411,6 +15686,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000351">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Carbon is a chemical element with the atomic number 6. It is a nonmetal.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Carbon</rdfs:label>
     </owl:Class>
@@ -15557,6 +15833,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000366">
         <rdfs:subClassOf rdf:resource="nuclear:000348"/>
+        <obo:IAO_0000115>Uranium 238 is a non-fissile isotope of uranium that occurs the most frequently in nature.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Uranium238</rdfs:label>
     </owl:Class>
@@ -15589,8 +15866,8 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000369">
         <rdfs:subClassOf rdf:resource="nuclear:000367"/>
+        <obo:IAO_0000115>Used as a moderator and coolant in organically moderated reactors.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:comment>Used as a moderator and coolant in organically moderated reactors.</rdfs:comment>
         <rdfs:label xml:lang="en">Terphenyl</rdfs:label>
     </owl:Class>
     
@@ -15614,6 +15891,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000371">
         <rdfs:subClassOf rdf:resource="nuclear:000338"/>
+        <obo:IAO_0000115>Xenon 135 is an isotope of xenon. It is a fission product of uranium.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Xenon135</rdfs:label>
     </owl:Class>
@@ -15624,6 +15902,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000372">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Lithium is a chemical element with the atomic number 3. It is a soft silvery-white metal.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Lithium</rdfs:label>
     </owl:Class>
@@ -15634,6 +15913,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000373">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Beryllium is a chemical element with the atomic number 4. It is a hard gray metal.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Beryllium</rdfs:label>
     </owl:Class>
@@ -15644,6 +15924,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000375">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Thorium is a chemical element with the atomic number 90. It is a white radioactive metal.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Thorium</rdfs:label>
     </owl:Class>
@@ -15717,6 +15998,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000381">
         <rdfs:subClassOf rdf:resource="nuclear:000349"/>
+        <obo:IAO_0000115>Plutonium 239 is a primarily fissile isotope of plutonium.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Plutonium239</rdfs:label>
     </owl:Class>
@@ -15792,6 +16074,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000386">
         <rdfs:subClassOf rdf:resource="nuclear:000211"/>
+        <obo:IAO_0000115>Lead is a chemical element with the atomic number 82. It is a heavy metal.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Lead</rdfs:label>
     </owl:Class>
@@ -17861,6 +18144,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000639">
         <rdfs:subClassOf rdf:resource="nuclear:000638"/>
+        <obo:IAO_0000115>Cotton is a fabric that is soft and almost pure cellulose.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">Cotton</rdfs:label>
     </owl:Class>
@@ -18260,6 +18544,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000414"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001203"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A time entry is a historical datum about some entity. The children of time entry add additional properties for keeping track of the history of some entity.</obo:IAO_0000115>
@@ -20248,8 +20538,8 @@ Canceled</rdfs:comment>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory stock record contains data related to how much of a stock code is stored in a specified location of the company</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/logistics_profile"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inventory stock record contains data related to how much of a stock code is stored in a specified location of the company</dc:creator>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jacob Settle</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InventoryStockRecord</rdfs:label>
     </owl:Class>
@@ -21263,6 +21553,7 @@ Maintenance of active vendors ensures that orders are placed with active vendors
                 <owl:someValuesFrom rdf:resource="nuclear:000785"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A wireless receiver is an equipment that receives data from a wireless transmitter.</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/condition_reporting_profile"/>
         <dc:creator>Jim Gracely</dc:creator>
         <rdfs:label>WirelessReceiver</rdfs:label>
@@ -21286,6 +21577,7 @@ Maintenance of active vendors ensures that orders are placed with active vendors
                 <owl:someValuesFrom rdf:resource="nuclear:000784"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A wireless transmitter is an equipment that sends data to a wireless receiver.</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/condition_reporting_profile"/>
         <dc:creator>Jim Gracely</dc:creator>
         <rdfs:label>WirelessTransmitter</rdfs:label>
@@ -21604,6 +21896,7 @@ Maintenance of active vendors ensures that orders are placed with active vendors
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A category is a label that applys some value from a predetermined list to some entity.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>Category</rdfs:label>
     </owl:Class>
@@ -21632,6 +21925,7 @@ Maintenance of active vendors ensures that orders are placed with active vendors
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>Insulation is a component that protects some entity against external elements such as temperature.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>Insulation</rdfs:label>
     </owl:Class>
@@ -21747,7 +22041,7 @@ Maintenance of active vendors ensures that orders are placed with active vendors
 
     <owl:Class rdf:about="nuclear:001152">
         <rdfs:subClassOf rdf:resource="nuclear:000050"/>
-        <obo:IAO_0000118>An operation code is an identifier which may be used to correlate multiple actions, such as work orders, to one operation.</obo:IAO_0000118>
+        <obo:IAO_0000115>An operation code is an identifier which may be used to correlate multiple actions, such as work orders, to one operation.</obo:IAO_0000115>
         <obo:IAO_0000118>OP</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>OperationCode</rdfs:label>
@@ -23053,6 +23347,12 @@ Maintenance of active vendors ensures that orders are placed with active vendors
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000412"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001009"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -23168,9 +23468,50 @@ Maintenance of active vendors ensures that orders are placed with active vendors
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001303"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001304"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A reactor map is a document that describes the number and layout of assemblies within a reactor.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>ReactorMap</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- nuclear:001297 -->
+
+    <owl:Class rdf:about="nuclear:001297">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001199"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001296"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001298"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A multiphysics data item is a data item that contains a node sequence, parameter, and value to be used as data within the input file to a multiphysics simulation.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>MultiphysicsDataItem</rdfs:label>
     </owl:Class>
     
 
