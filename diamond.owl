@@ -752,6 +752,16 @@
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/acronym -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/acronym">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000468"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">acronym</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- nuclear:000001 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:000001">
@@ -9486,6 +9496,35 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:label xml:lang="en">InformationContentEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/HeatPipe -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/HeatPipe">
+        <rdfs:subClassOf rdf:resource="nuclear:000179"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/acronym"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000393"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000504"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A heat pipe is a heat-transfer device that combines the principles of both thermal conductivity and phase transition to effectively transfer heat between two solid interfaces.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">HeatPipe</rdfs:label>
     </owl:Class>
     
 
