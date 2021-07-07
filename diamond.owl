@@ -777,6 +777,7 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/acronym">
         <rdfs:subPropertyOf rdf:resource="nuclear:000468"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">acronym</rdfs:label>
     </owl:DatatypeProperty>
@@ -787,9 +788,22 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/date_and_time">
         <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <obo:IAO_0000115>the  timestamp and numeric values as the time-zone-independent number of seconds that have elapsed since 12:00 a.m., Friday, January 1, 1904, Universal Time.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">date and time</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/executable_name -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/executable_name">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>causes a computer to perform indicated tasks according to encoded instructions</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">executable name</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -884,6 +898,17 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
         <rdfs:subPropertyOf rdf:resource="nuclear:001198"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">range unit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/version -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/version">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000331"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">version</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -7289,7 +7314,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <owl:DatatypeProperty rdf:about="nuclear:001099">
         <rdfs:subPropertyOf rdf:resource="nuclear:000495"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>at completion duraiton</rdfs:label>
+        <rdfs:label>at completion duration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9743,6 +9768,46 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>the measurement used to determine which model is best at identifying relationships and patterns between variables in a dataset based on the input, or training, data.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">MachineLearningModelAccuracy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/PhysicsAnalysis -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/PhysicsAnalysis">
+        <rdfs:subClassOf rdf:resource="nuclear:000160"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000672"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000671"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/executable_name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>the coupled processes or systems involving one or more simultaneously occurring physical field and the studies of and knowledge about these processes and systems.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">PhysicsAnalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/Version -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/Version">
+        <rdfs:subClassOf rdf:resource="nuclear:001189"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/version"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>assign either unique version names or unique version numbers to unique state of computer software.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">Version</rdfs:label>
     </owl:Class>
     
 
