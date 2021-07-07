@@ -783,6 +783,17 @@
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/date_and_time -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/date_and_time">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <obo:IAO_0000115>the  timestamp and numeric values as the time-zone-independent number of seconds that have elapsed since 12:00 a.m., Friday, January 1, 1904, Universal Time.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">date and time</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/range -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/range">
@@ -9539,6 +9550,41 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/base_profile"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:label xml:lang="en">InformationContentEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/CartridgeHeater -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/CartridgeHeater">
+        <rdfs:subClassOf rdf:resource="nuclear:000302"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000672"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000245"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000672"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000246"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000672"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000380"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000672"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000494"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a tube-shaped, heavy-duty, industrial Joule heating element used in the process heating industry, usually custom manufactured to a specific watt density,based on its intended application.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">CartridgeHeater</rdfs:label>
     </owl:Class>
     
 
@@ -18996,6 +19042,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000706">
         <rdfs:subClassOf rdf:resource="nuclear:000671"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/date_and_time"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000590"/>
