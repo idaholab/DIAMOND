@@ -752,27 +752,6 @@
     
 
 
-    <!-- https://github.com/idaholab/DIAMOND/accuracy -->
-
-    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/accuracy">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
-        <obo:IAO_0000115>the closeness of the measurements to a specific value</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">accuracy</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/idaholab/DIAMOND/accuracy_unit -->
-
-    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/accuracy_unit">
-        <rdfs:subPropertyOf rdf:resource="nuclear:001198"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">accuracy unit</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://github.com/idaholab/DIAMOND/acronym -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/acronym">
@@ -784,14 +763,13 @@
     
 
 
-    <!-- https://github.com/idaholab/DIAMOND/date_and_time -->
+    <!-- https://github.com/idaholab/DIAMOND/executable_date -->
 
-    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/date_and_time">
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/executable_date">
         <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-        <obo:IAO_0000115>the  timestamp and numeric values as the time-zone-independent number of seconds that have elapsed since 12:00 a.m., Friday, January 1, 1904, Universal Time.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">date and time</rdfs:label>
+        <rdfs:label xml:lang="en">executable date</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -881,23 +859,12 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     
 
 
-    <!-- https://github.com/idaholab/DIAMOND/range -->
+    <!-- https://github.com/idaholab/DIAMOND/section -->
 
-    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/range">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
-        <obo:IAO_0000115>the difference between the highest and the lowest values in a set</obo:IAO_0000115>
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/section">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">range</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/idaholab/DIAMOND/range_unit -->
-
-    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/range_unit">
-        <rdfs:subPropertyOf rdf:resource="nuclear:001198"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">range unit</rdfs:label>
+        <rdfs:label xml:lang="en">section</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9652,6 +9619,17 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/Accuracy -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/Accuracy">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>closeness of the measurements to a specific value</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">Accuracy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/CartridgeHeater -->
 
     <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/CartridgeHeater">
@@ -9702,6 +9680,18 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000717"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000706"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/section"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000593"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a tube-shaped, heavy-duty, industrial Joule heating element used in the process heating industry, usually custom manufactured to a specific watt density,based on its intended application.</obo:IAO_0000115>
@@ -9773,13 +9763,13 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/machine_learning_data_type"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/machine_learning_dataset"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
@@ -9828,7 +9818,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/machine_learning_dataset"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9868,13 +9858,37 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/executable_date"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/executable_name"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001262"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>the coupled processes or systems involving one or more simultaneously occurring physical field and the studies of and knowledge about these processes and systems.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">PhysicsAnalysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/Range -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/Range">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>a set of real numbers that includes all numbers between any two numbers in the set</obo:IAO_0000115>
+        <obo:IAO_0000118>Interval</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">Range</rdfs:label>
     </owl:Class>
     
 
@@ -10425,31 +10439,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/accuracy_unit"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/acronym"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/range"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/range_unit"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -19210,7 +19200,31 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000717"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/Accuracy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000717"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/Range"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000717"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000706"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/section"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000593"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A thermocouple is a temperature sensor that uses voltage to determine a measured temperature.</obo:IAO_0000115>
@@ -19378,12 +19392,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000672"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000691"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/date_and_time"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
