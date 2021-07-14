@@ -9140,6 +9140,27 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
+    <!-- nuclear:001308 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001308">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <obo:IAO_0000115>Indicates whether the assembly position is a fertile target for misuse and diversion scenarios.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>fertile target flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001309 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001309">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000477"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>destination data source id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -15363,6 +15384,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001302"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001309"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -23409,6 +23436,12 @@ Maintenance of active vendors ensures that orders are placed with active vendors
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001287"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001308"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An assembly is an equipment that is placed within a section (often hexagonal) of a reactor to perform some function such as holding fuel or experiment material.</obo:IAO_0000115>
