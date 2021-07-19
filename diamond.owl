@@ -863,6 +863,7 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/section">
         <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">section</rdfs:label>
     </owl:DatatypeProperty>
@@ -10378,12 +10379,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000133"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000766"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000133"/>
-                <owl:someValuesFrom rdf:resource="nuclear:000768"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
