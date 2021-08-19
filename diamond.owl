@@ -9669,20 +9669,8 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="nuclear:000302"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000185"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/PhysicsAnalysis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000717"/>
                 <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/HeatPipe"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001282"/>
-                <owl:someValuesFrom rdf:resource="nuclear:000706"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9747,14 +9735,14 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000184"/>
-                <owl:someValuesFrom rdf:resource="nuclear:000706"/>
+                <owl:onProperty rdf:resource="nuclear:000717"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningModel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000717"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningModel"/>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/independent_variable"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9838,18 +9826,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/PhysicsAnalysis">
         <rdfs:subClassOf rdf:resource="nuclear:000160"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000184"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/CartridgeHeater"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000184"/>
-                <owl:someValuesFrom rdf:resource="nuclear:000691"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000672"/>
@@ -19211,20 +19187,8 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="nuclear:000692"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000185"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/PhysicsAnalysis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000717"/>
                 <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/HeatPipe"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001282"/>
-                <owl:someValuesFrom rdf:resource="nuclear:000706"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -19396,20 +19360,38 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="nuclear:000671"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000185"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningDataType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001283"/>
+                <owl:onProperty rdf:resource="nuclear:000184"/>
                 <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/CartridgeHeater"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001283"/>
+                <owl:onProperty rdf:resource="nuclear:000184"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningDataType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000184"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001283"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/HeatPipe"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001283"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001283"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/PhysicsAnalysis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
