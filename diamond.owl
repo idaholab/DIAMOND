@@ -9781,6 +9781,18 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000220"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/DependentVariable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000220"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/IndependentVariable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000672"/>
                 <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningDataType"/>
             </owl:Restriction>
