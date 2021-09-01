@@ -339,6 +339,12 @@
     
 
 
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    
+
+
     <!-- http://www.w3.org/2001/XMLSchema#ID -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#ID"/>
@@ -6498,7 +6504,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001002">
         <rdfs:subPropertyOf rdf:resource="nuclear:001001"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#ID"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">link</rdfs:label>
     </owl:DatatypeProperty>
@@ -9297,6 +9302,38 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
+    <!-- nuclear:001311 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001311">
+        <obo:IAO_0000115>A list is a data property that must contain only primitive values (strings, numbers, etc)</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>list</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001312 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001312">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001311"/>
+        <obo:IAO_0000115>An independent variable is a data item or variable (often denoted by x) whose variation does not depend on that of another and is used in mathematical modeling, statistical modeling, and experimental sciences.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>independent variables</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001313 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001313">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001311"/>
+        <obo:IAO_0000115>An dependent variable is a data item or variable (often denoted by y) whose value depends on that of another and is used in mathematical modeling, statistical modeling, and experimental sciences.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>dependent variables</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -9687,17 +9724,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
-    <!-- https://github.com/idaholab/DIAMOND/DependentVariable -->
-
-    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/DependentVariable">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>An dependent variable is a data item or variable (often denoted by y ) whose value depends on that of another and is used in mathematical modeling, statistical modeling, and experimental sciences.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DependentVariable</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/idaholab/DIAMOND/HeatPipe -->
 
     <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/HeatPipe">
@@ -9717,17 +9743,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>A heat pipe is a heat-transfer device that combines the principles of both thermal conductivity and phase transition to effectively transfer heat between two solid interfaces.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">HeatPipe</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/idaholab/DIAMOND/IndependentVariable -->
-
-    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/IndependentVariable">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>An independent variable is a data item or variable (often denoted by x ) whose variation does not depend on that of another and is used in mathematical modeling, statistical modeling, and experimental sciences.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">IndependentVariable</rdfs:label>
     </owl:Class>
     
 
@@ -9781,18 +9796,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000220"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/DependentVariable"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000220"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/IndependentVariable"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000672"/>
                 <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningDataType"/>
             </owl:Restriction>
@@ -9825,6 +9828,18 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000454"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001312"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001313"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A machine learning model is a file that has been trained to recognize certain types of patterns. You train a model over a set of data, providing it an algorithm that it can use to reason over and learn from those data.</obo:IAO_0000115>
@@ -20267,7 +20282,7 @@ November 2004</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001031"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#token"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A procedure defines details around how some process should be performed. The content definition for an Operations Technical Document (TD).</obo:IAO_0000115>
@@ -22154,7 +22169,7 @@ Maintenance of active vendors ensures that orders are placed with active vendors
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000945"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An organization or entity that handles nuclear materials and has been issues a licence by the NRC</obo:IAO_0000115>
@@ -22379,7 +22394,7 @@ Maintenance of active vendors ensures that orders are placed with active vendors
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001002"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#ID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
