@@ -116,7 +116,13 @@
         <Class abbreviatedIRI="obo:IAO_0000030"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ManufacturingProcess"/>
+        <Class IRI="BuildInstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ParameterStudy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ParameterStudyRecord"/>
     </Declaration>
     <Declaration>
         <Class IRI="nuclear:000086"/>
@@ -2515,8 +2521,16 @@
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="ManufacturingProcess"/>
-        <Class abbreviatedIRI="obo:BFO_0000015"/>
+        <Class IRI="BuildInstance"/>
+        <Class IRI="nuclear:000125"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ParameterStudy"/>
+        <Class abbreviatedIRI="obo:BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ParameterStudyRecord"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="nuclear:000086"/>
