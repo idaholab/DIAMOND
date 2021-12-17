@@ -119,10 +119,16 @@
         <Class IRI="BuildInstance"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Parameter"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ParameterStudy"/>
     </Declaration>
     <Declaration>
         <Class IRI="ParameterStudyRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Unit"/>
     </Declaration>
     <Declaration>
         <Class IRI="nuclear:000086"/>
@@ -147,9 +153,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="nuclear:000448"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="nuclear:001164"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="nuclear:000010"/>
@@ -2525,12 +2528,34 @@
         <Class IRI="nuclear:000125"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Parameter"/>
+        <Class abbreviatedIRI="obo:BFO_0000020"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Parameter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="Unit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Parameter"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="parameter_type"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="ParameterStudy"/>
         <Class abbreviatedIRI="obo:BFO_0000031"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ParameterStudyRecord"/>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Unit"/>
+        <Class abbreviatedIRI="obo:BFO_0000020"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="nuclear:000086"/>
@@ -2773,31 +2798,6 @@
     <SubClassOf>
         <Class IRI="nuclear:000448"/>
         <Class abbreviatedIRI="obo:BFO_0000031"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="nuclear:001164"/>
-        <Class abbreviatedIRI="obo:BFO_0000015"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="nuclear:001164"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="nuclear:000134"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="nuclear:001164"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="nuclear:000483"/>
-            <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="nuclear:001164"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="nuclear:000854"/>
-            <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:BFO_0000002"/>
@@ -15338,21 +15338,6 @@ WB diferentiates this dose as the SDE across the whole body</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>nuclear:001163</IRI>
         <Literal>earliest start date</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>nuclear:001164</IRI>
-        <Literal>An outage is a process which occurs over some time period in which a nuclear power plant is unable to operate.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <IRI>nuclear:001164</IRI>
-        <Literal>Jeren Browning</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>nuclear:001164</IRI>
-        <Literal>Outage</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
