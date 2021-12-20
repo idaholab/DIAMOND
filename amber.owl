@@ -116,7 +116,37 @@
         <Class abbreviatedIRI="obo:IAO_0000030"/>
     </Declaration>
     <Declaration>
+        <Class IRI="BooleanValue"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="BuildInstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Coordinate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FileGeometry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FloatValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IntegerValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ManufacturingProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ManufacturingSetting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ManufacturingSubprocess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MaterialType"/>
     </Declaration>
     <Declaration>
         <Class IRI="Parameter"/>
@@ -126,6 +156,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="ParameterStudyRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProfileGeometry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SampleGeometry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StringValue"/>
     </Declaration>
     <Declaration>
         <Class IRI="Unit"/>
@@ -153,6 +192,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="nuclear:000448"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="connectsTo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="nuclear:000010"/>
@@ -227,6 +269,12 @@
         <DataProperty IRI="acronym"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="composition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="composition_type"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="executable_date"/>
     </Declaration>
     <Declaration>
@@ -234,6 +282,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="file_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="form_method"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="goal_type"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="machine_learning_data_type"/>
@@ -249,6 +303,15 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="version"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="x"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="y"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="z"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="nuclear:000001"/>
@@ -2524,8 +2587,279 @@
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="BooleanValue"/>
+        <Class IRI="Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BooleanValue"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="nuclear:000218"/>
+            <Class IRI="Parameter"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BooleanValue"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="nuclear:000411"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BooleanValue"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="nuclear:001199"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="BuildInstance"/>
         <Class IRI="nuclear:000125"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BuildInstance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="BooleanValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BuildInstance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="FloatValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BuildInstance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="IntegerValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BuildInstance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="Material"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BuildInstance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="SampleGeometry"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BuildInstance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="StringValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coordinate"/>
+        <Class abbreviatedIRI="obo:BFO_0000141"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coordinate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="connectsTo"/>
+            <Class IRI="Coordinate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coordinate"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="x"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coordinate"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="y"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Coordinate"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="z"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FileGeometry"/>
+        <Class IRI="SampleGeometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FileGeometry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000218"/>
+            <Class IRI="SampleGeometry"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FileGeometry"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="nuclear:000604"/>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FloatValue"/>
+        <Class IRI="Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FloatValue"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="nuclear:000218"/>
+            <Class IRI="Parameter"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FloatValue"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="nuclear:000411"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FloatValue"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="nuclear:001199"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IntegerValue"/>
+        <Class IRI="Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IntegerValue"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="nuclear:000218"/>
+            <Class IRI="Parameter"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IntegerValue"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="nuclear:000411"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IntegerValue"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="nuclear:001199"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ManufacturingProcess"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ManufacturingProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="MaterialType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ManufacturingSetting"/>
+        <Class abbreviatedIRI="obo:BFO_0000035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ManufacturingSetting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="Parameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ManufacturingSetting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000218"/>
+            <Class IRI="ManufacturingProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ManufacturingSubprocess"/>
+        <Class IRI="ManufacturingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ManufacturingSubprocess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="Parameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ManufacturingSubprocess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000218"/>
+            <Class IRI="ManufacturingProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Material"/>
+        <Class IRI="nuclear:000125"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Material"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="BooleanValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Material"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="FloatValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Material"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="IntegerValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Material"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="StringValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MaterialType"/>
+        <Class IRI="nuclear:000125"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MaterialType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000185"/>
+            <Class IRI="Parameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MaterialType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="Parameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MaterialType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000220"/>
+            <Class IRI="Material"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Parameter"/>
@@ -2550,8 +2884,111 @@
         <Class abbreviatedIRI="obo:BFO_0000031"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="ParameterStudy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="Parameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="ParameterStudyRecord"/>
         <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ParameterStudyRecord"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="BooleanValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ParameterStudyRecord"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="FloatValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ParameterStudyRecord"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="IntegerValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ParameterStudyRecord"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="StringValue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ParameterStudyRecord"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="goal_type"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProfileGeometry"/>
+        <Class IRI="SampleGeometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProfileGeometry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000217"/>
+            <Class IRI="Coordinate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProfileGeometry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000218"/>
+            <Class IRI="SampleGeometry"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProfileGeometry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="nuclear:000295"/>
+            <Class IRI="Coordinate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProfileGeometry"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="form_method"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SampleGeometry"/>
+        <Class abbreviatedIRI="obo:BFO_0000141"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StringValue"/>
+        <Class IRI="Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StringValue"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="nuclear:000218"/>
+            <Class IRI="Parameter"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StringValue"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="nuclear:000411"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StringValue"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="nuclear:001199"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Unit"/>
@@ -2688,6 +3125,20 @@
     <SubClassOf>
         <Class IRI="nuclear:000125"/>
         <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="nuclear:000125"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="composition"/>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="nuclear:000125"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="composition_type"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="nuclear:000125"/>
@@ -3006,6 +3457,14 @@
         <DataProperty IRI="nuclear:000468"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="composition"/>
+        <DataProperty IRI="nuclear:000412"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="composition_type"/>
+        <DataProperty IRI="nuclear:000276"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="executable_date"/>
         <DataProperty IRI="nuclear:000411"/>
     </SubDataPropertyOf>
@@ -3016,6 +3475,14 @@
     <SubDataPropertyOf>
         <DataProperty IRI="file_id"/>
         <DataProperty IRI="nuclear:000413"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="form_method"/>
+        <DataProperty IRI="nuclear:000276"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="goal_type"/>
+        <DataProperty IRI="nuclear:000276"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="machine_learning_data_type"/>
@@ -3036,6 +3503,18 @@
     <SubDataPropertyOf>
         <DataProperty IRI="version"/>
         <DataProperty IRI="nuclear:000331"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="x"/>
+        <DataProperty IRI="nuclear:000412"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="y"/>
+        <DataProperty IRI="nuclear:000412"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="z"/>
+        <DataProperty IRI="nuclear:000412"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="nuclear:000001"/>
@@ -5322,6 +5801,18 @@
         <DataProperty IRI="nuclear:000316"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="nuclear:001199"/>
+        <DataProperty IRI="nuclear:000410"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="nuclear:001199"/>
+        <DataProperty IRI="nuclear:000412"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="nuclear:001199"/>
+        <DataProperty IRI="nuclear:000413"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="nuclear:001200"/>
         <DataProperty IRI="nuclear:000416"/>
     </SubDataPropertyOf>
@@ -5698,6 +6189,24 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="composition"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="composition"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="composition_type"/>
+        <DataOneOf>
+            <Literal>mass</Literal>
+            <Literal>volume</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="executable_date"/>
         <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
     </DataPropertyRange>
@@ -5708,6 +6217,20 @@
     <DataPropertyRange>
         <DataProperty IRI="file_id"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="form_method"/>
+        <DataOneOf>
+            <Literal>extrude</Literal>
+            <Literal>revolve</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="goal_type"/>
+        <DataOneOf>
+            <Literal>physical</Literal>
+            <Literal>simulated</Literal>
+        </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="machine_learning_data_type"/>
