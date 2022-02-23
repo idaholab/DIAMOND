@@ -759,6 +759,14 @@
     
 
 
+    <!-- https://github.com/idaholab/AMBER/abbreviation -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/abbreviation">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/AMBER/acronym -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/acronym">
@@ -10261,6 +10269,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="https://github.com/idaholab/AMBER/Unit">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/abbreviation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A unit to label parameter values in such a way that the equations relating the numerical values expressed in the units of the system have exactly the same form.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brennan Harris</dc:creator>
         <rdfs:label xml:lang="en">Unit</rdfs:label>
