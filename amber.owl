@@ -763,6 +763,9 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/AMBER/abbreviation">
         <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000115>Standard abbreviated string, usually for a unit definition</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>abbreviation</rdfs:label>
     </owl:DatatypeProperty>
     
 
