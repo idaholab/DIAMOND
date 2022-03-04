@@ -9871,6 +9871,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/MaterialConstituent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/composition_type"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A compound of material constituents.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brennan Harris</dc:creator>
         <rdfs:label xml:lang="en">Compound</rdfs:label>
@@ -10079,12 +10085,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/composition"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/idaholab/AMBER/composition_type"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A material consituent that has a relative share of mass or volume in a compound.</obo:IAO_0000115>
