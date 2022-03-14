@@ -9849,6 +9849,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000295"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/ManufacturingProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000217"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://github.com/idaholab/AMBER/Compound"/>
