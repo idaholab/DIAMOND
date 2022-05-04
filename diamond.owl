@@ -769,6 +769,71 @@
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/engineering_change_status -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/engineering_change_status">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000276"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>complete</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>new</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>update-failed</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>update-passed</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>upload-failed</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>upload-passed</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>validation-failed</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>validation-passed</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <obo:IAO_0000115>stage of ecr automated upload</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>engineering change status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/executable_date -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/executable_date">
@@ -866,6 +931,17 @@ validation: a dataset that uses the fitted model to predict the responses for th
 test: a dataset used to provide an unbiased evaluation of a final model fit on the training dataset</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">machine learning dataset</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/project -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/project">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000115>project identifier for classifying engineering change request</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>project</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1510,6 +1586,7 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     <!-- nuclear:000276 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:000276">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000856"/>
         <obo:IAO_0000115>An enumeration is a property that is made up of a range of static, user-defined values.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">enumeration</rdfs:label>
     </owl:DatatypeProperty>
@@ -2162,6 +2239,7 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
 
     <owl:DatatypeProperty rdf:about="nuclear:000406">
         <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000115>an entity software association</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">software version</rdfs:label>
     </owl:DatatypeProperty>
@@ -9809,6 +9887,35 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>A cartridge heater is a tube-shaped, heavy-duty, industrial Joule heating element used in the process heating industry, usually custom manufactured to a specific watt density,based on its intended application.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">CartridgeHeater</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/EngineeringChangeStatus -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeStatus">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/engineering_change_status"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/project"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000406"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An extension of a PLM&apos;s engineering change request datatype to capture intermediate steps not defined in the PLM</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>EngineeringChangeStatus</rdfs:label>
     </owl:Class>
     
 
@@ -24318,6 +24425,66 @@ Maintenance of active vendors ensures that orders are placed with active vendors
             <rdf:Description rdf:about="nuclear:000120"/>
             <rdf:Description rdf:about="nuclear:000447"/>
             <rdf:Description rdf:about="nuclear:000448"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeStatus"/>
+            <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/MachineLearning"/>
+            <rdf:Description rdf:about="nuclear:000056"/>
+            <rdf:Description rdf:about="nuclear:000275"/>
+            <rdf:Description rdf:about="nuclear:000277"/>
+            <rdf:Description rdf:about="nuclear:000290"/>
+            <rdf:Description rdf:about="nuclear:000291"/>
+            <rdf:Description rdf:about="nuclear:000408"/>
+            <rdf:Description rdf:about="nuclear:000415"/>
+            <rdf:Description rdf:about="nuclear:000484"/>
+            <rdf:Description rdf:about="nuclear:000485"/>
+            <rdf:Description rdf:about="nuclear:000567"/>
+            <rdf:Description rdf:about="nuclear:000569"/>
+            <rdf:Description rdf:about="nuclear:000571"/>
+            <rdf:Description rdf:about="nuclear:000572"/>
+            <rdf:Description rdf:about="nuclear:000573"/>
+            <rdf:Description rdf:about="nuclear:000576"/>
+            <rdf:Description rdf:about="nuclear:000581"/>
+            <rdf:Description rdf:about="nuclear:000600"/>
+            <rdf:Description rdf:about="nuclear:000601"/>
+            <rdf:Description rdf:about="nuclear:000674"/>
+            <rdf:Description rdf:about="nuclear:000746"/>
+            <rdf:Description rdf:about="nuclear:000747"/>
+            <rdf:Description rdf:about="nuclear:000748"/>
+            <rdf:Description rdf:about="nuclear:000749"/>
+            <rdf:Description rdf:about="nuclear:000750"/>
+            <rdf:Description rdf:about="nuclear:000751"/>
+            <rdf:Description rdf:about="nuclear:000752"/>
+            <rdf:Description rdf:about="nuclear:000753"/>
+            <rdf:Description rdf:about="nuclear:000754"/>
+            <rdf:Description rdf:about="nuclear:000755"/>
+            <rdf:Description rdf:about="nuclear:000756"/>
+            <rdf:Description rdf:about="nuclear:000761"/>
+            <rdf:Description rdf:about="nuclear:000762"/>
+            <rdf:Description rdf:about="nuclear:000763"/>
+            <rdf:Description rdf:about="nuclear:000764"/>
+            <rdf:Description rdf:about="nuclear:001167"/>
+            <rdf:Description rdf:about="nuclear:001172"/>
+            <rdf:Description rdf:about="nuclear:001173"/>
+            <rdf:Description rdf:about="nuclear:001174"/>
+            <rdf:Description rdf:about="nuclear:001175"/>
+            <rdf:Description rdf:about="nuclear:001176"/>
+            <rdf:Description rdf:about="nuclear:001183"/>
+            <rdf:Description rdf:about="nuclear:001184"/>
+            <rdf:Description rdf:about="nuclear:001186"/>
+            <rdf:Description rdf:about="nuclear:001187"/>
+            <rdf:Description rdf:about="nuclear:001188"/>
+            <rdf:Description rdf:about="nuclear:001189"/>
+            <rdf:Description rdf:about="nuclear:001190"/>
+            <rdf:Description rdf:about="nuclear:001192"/>
+            <rdf:Description rdf:about="nuclear:001241"/>
+            <rdf:Description rdf:about="nuclear:001244"/>
+            <rdf:Description rdf:about="nuclear:001255"/>
+            <rdf:Description rdf:about="nuclear:001256"/>
+            <rdf:Description rdf:about="nuclear:001297"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
