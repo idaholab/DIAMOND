@@ -779,46 +779,16 @@
                 <owl:oneOf>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>complete</rdf:first>
+                        <rdf:first>failed</rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>new</rdf:first>
+                                <rdf:first>incomplete</rdf:first>
                                 <rdf:rest>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>update-failed</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first>update-passed</rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first>upload-failed</rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first>upload-passed</rdf:first>
-                                                                <rdf:rest>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                        <rdf:first>validation-failed</rdf:first>
-                                                                        <rdf:rest>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                <rdf:first>validation-passed</rdf:first>
-                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                            </rdf:Description>
-                                                                        </rdf:rest>
-                                                                    </rdf:Description>
-                                                                </rdf:rest>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
+                                        <rdf:first>passed</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                                     </rdf:Description>
                                 </rdf:rest>
                             </rdf:Description>
@@ -827,7 +797,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
-        <obo:IAO_0000115>stage of ecr automated upload</obo:IAO_0000115>
+        <obo:IAO_0000115>stage status of ecr automated upload</obo:IAO_0000115>
         <dc:creator>Brennan Harris</dc:creator>
         <rdfs:label>engineering change status</rdfs:label>
     </owl:DatatypeProperty>
@@ -9891,6 +9861,17 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/EngineeringChangeComplete -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeComplete">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/EngineeringChangeStatus"/>
+        <obo:IAO_0000115>The completion status of an engineering change automation action</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>EngineeringChangeComplete</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/EngineeringChangeStatus -->
 
     <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeStatus">
@@ -9916,6 +9897,50 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>An extension of a PLM&apos;s engineering change request datatype to capture intermediate steps not defined in the PLM</obo:IAO_0000115>
         <dc:creator>Brennan Harris</dc:creator>
         <rdfs:label>EngineeringChangeStatus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/EngineeringChangeSync -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeSync">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/EngineeringChangeStatus"/>
+        <obo:IAO_0000115>The create status of an engineering change automation action</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>EngineeringChangeSync</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/EngineeringChangeUpdate -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeUpdate">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/EngineeringChangeStatus"/>
+        <obo:IAO_0000115>The update status of an engineering change automation action</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>EngineeringChangeUpdate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/EngineeringChangeUpload -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeUpload">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/EngineeringChangeStatus"/>
+        <obo:IAO_0000115>The upload status of an engineering change automation action</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>EngineeringChangeUpload</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/EngineeringChangeValidation -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeValidation">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/EngineeringChangeStatus"/>
+        <obo:IAO_0000115>The document validation status of an engineering change automation action</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>EngineeringChangeValidation</rdfs:label>
     </owl:Class>
     
 
@@ -24425,6 +24450,16 @@ Maintenance of active vendors ensures that orders are placed with active vendors
             <rdf:Description rdf:about="nuclear:000120"/>
             <rdf:Description rdf:about="nuclear:000447"/>
             <rdf:Description rdf:about="nuclear:000448"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeComplete"/>
+            <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeSync"/>
+            <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeUpdate"/>
+            <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeUpload"/>
+            <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeValidation"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
