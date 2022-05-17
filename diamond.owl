@@ -769,6 +769,17 @@
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/document_type -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/document_type">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000115>A two- to four-char code describing a type of document (e.g. DWG, EDF, BS)</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>document type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/engineering_change_status -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/engineering_change_status">
@@ -823,6 +834,17 @@
         <obo:IAO_0000115>An executable causes a computer to perform indicated tasks according to encoded instructions.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">executable name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/facility_code -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/facility_code">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000115>A three-char facility designator</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>facility code</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9941,6 +9963,41 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>The document validation status of an engineering change automation action</obo:IAO_0000115>
         <dc:creator>Brennan Harris</dc:creator>
         <rdfs:label>EngineeringChangeValidation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/EngineeringDocumentNumber -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/EngineeringDocumentNumber">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/document_type"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/facility_code"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000329"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000461"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An allocated document number with its associated facility, type, and status for compliance with an engineering change management solution.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>EngineeringDocumentNumber</rdfs:label>
     </owl:Class>
     
 
