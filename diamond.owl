@@ -9435,6 +9435,251 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
+    <!-- nuclear:001337 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001337">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001342"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>sample size</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001338 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001338">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001342"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>sampling frequency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001339 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001339">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001342"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>noise</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001340 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001340">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001342"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>bin size</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001341 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001341">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001342"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>number of trials</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001342 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001342">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>machine learning data point</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001343 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001343">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001311"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>scenarios</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001344 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001344">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001342"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>accuracy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001345 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001345">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001344"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>scenario accuracy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001346 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001346">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001344"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>diversion accuracy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001353 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001353">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>amount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001355 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001355">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>diversion count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001356 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001356">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>non-diversion count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001357 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001357">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>diversion flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001359 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001359">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:comment>0 pebble diversion Burn Up count</rdfs:comment>
+        <rdfs:label>0PebDiv BU count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001360 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001360">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:comment>1 pebble diversion Burn Up count</rdfs:comment>
+        <rdfs:label>1PebDiv BU count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001361 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001361">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:comment>2 pebble diversion Burn Up count</rdfs:comment>
+        <rdfs:label>2PebDiv BU count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001362 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001362">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:comment>3 pebble diversion Burn Up count</rdfs:comment>
+        <rdfs:label>3PebDiv BU count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001363 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001363">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:comment>4 pebble diversion Burn Up count</rdfs:comment>
+        <rdfs:label>4PebDiv BU count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001364 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001364">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000329"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>condition report status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001365 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001365">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000719"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>condition report reportability notes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001366 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001366">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000719"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>condition report functionality notes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001367 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001367">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000719"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>condition report operations review notes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- nuclear:001368 -->
+
+    <owl:DatatypeProperty rdf:about="nuclear:001368">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000719"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>condition report screening committee notes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -11964,6 +12209,36 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001301"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001364"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001365"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001366"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001367"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001368"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -24212,6 +24487,12 @@ Maintenance of active vendors ensures that orders are placed with active vendors
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001009"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001199"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
@@ -24289,6 +24570,112 @@ Maintenance of active vendors ensures that orders are placed with active vendors
         <obo:IAO_0000115>A supervisory control request is a work instruction that is generated by some supervisory control or programmable logic controller system.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>SupervisoryControlRequest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- nuclear:001354 -->
+
+    <owl:Class rdf:about="nuclear:001354">
+        <rdfs:subClassOf rdf:resource="nuclear:001315"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001337"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001338"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001339"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001340"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001341"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001343"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001345"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001346"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001355"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001356"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001357"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001359"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001360"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001361"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001362"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001363"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
+        <rdfs:label>DiversionClassification</rdfs:label>
     </owl:Class>
     
 
