@@ -347,13 +347,17 @@
 
     <!-- http://www.w3.org/2001/XMLSchema#ID -->
 
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#ID"/>
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#ID">
+        <rdfs:comment>Intended for use by cross references within an XML document, not as a datatype for data properties.</rdfs:comment>
+    </rdfs:Datatype>
     
 
 
     <!-- http://www.w3.org/2001/XMLSchema#IDREF -->
 
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#IDREF"/>
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#IDREF">
+        <rdfs:comment>Intended for use by cross references within an XML document, not as a datatype for data properties.</rdfs:comment>
+    </rdfs:Datatype>
     
 
 
@@ -6524,7 +6528,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001004">
         <rdfs:subPropertyOf rdf:resource="nuclear:001001"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#IDREF"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">source</rdfs:label>
     </owl:DatatypeProperty>
@@ -22712,13 +22715,13 @@ Maintenance of active vendors ensures that orders are placed with active vendors
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001003"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#IDREF"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001004"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#IDREF"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
