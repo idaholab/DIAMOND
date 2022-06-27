@@ -24280,6 +24280,12 @@ Maintenance of active vendors ensures that orders are placed with active vendors
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001357"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An assembly is an equipment that is placed within a section (often hexagonal) of a reactor to perform some function such as holding fuel or experiment material.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>Assembly</rdfs:label>
