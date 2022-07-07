@@ -9912,6 +9912,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000329"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000406"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -9998,6 +10004,41 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>An allocated document number with its associated facility, type, and status for compliance with an engineering change management solution.</obo:IAO_0000115>
         <dc:creator>Brennan Harris</dc:creator>
         <rdfs:label>EngineeringDocumentNumber</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/EngineeringDrawingNumber -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/EngineeringDrawingNumber">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/document_type"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/facility_code"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000329"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000461"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An allocated document number with its associated facility, type, and status for compliance with an engineering change management solution.</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>EngineeringDrawingNumber</rdfs:label>
     </owl:Class>
     
 
