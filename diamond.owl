@@ -361,6 +361,14 @@
     
 
 
+    <!-- http://www.w3.org/2001/XMLSchema#double -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#double">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -762,6 +770,129 @@
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/Loss_train -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/Loss_train">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loss is the value calculated by the loss function / cost function that indicates the quality of the model prediction. The loss is zero if the model prediction is correct; otherwise, the loss is greater.  The purpose is to optimize the model to find a set of weights and biases that have low loss across the training set.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>loss train</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/MAE_test -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/MAE_test">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAE represents the difference between the original and predicted values extracted by averaged the absolute difference over the data set. MAE test is the MAE for the testing set.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mean Absolute Error (MAE)</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>MAE test</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/MAE_train -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/MAE_train">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAE represents the difference between the original and predicted values extracted by averaged the absolute difference over the data set. MAE train is the MAE for the training set.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mean Absolute Error (MAE)</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>MAE train</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/MSE_test -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/MSE_test">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSE represents the difference between the original and predicted values extracted by squared the average difference over the data set. MSE test is the MSE for the testing set.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mean Squared Error (MSE)</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>MSE test</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/MSE_train -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/MSE_train">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSE represents the difference between the original and predicted values extracted by squared the average difference over the data set. MSE train is the MSE for the training set.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mean Squared Error (MSE)</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>MSE train</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/R2_test -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/R2_test">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-squared represents the coefficient of how well the values fit compared to the original values. The value from 0 to 1 interpreted as percentages. The higher the value is, the better the model is. R-squared test represents the R-squared value of the testing set.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>R-squared test</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/R2_train -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/R2_train">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R-squared represents the coefficient of how well the values fit compared to the original values. The value from 0 to 1 interpreted as percentages. The higher the value is, the better the model is. R-squared train represents the R-squared value of the training set.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>R-squared train</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/RMSE_test -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/RMSE_test">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RMSE (Root Mean Squared Error) is the error rate by the square root of MSE. RMSE test is the RMSE for the testing set.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>RMSE test</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/RMSE_train -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/RMSE_train">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RMSE (Root Mean Squared Error) is the error rate by the square root of MSE. RMSE train is the RMSE for the training set.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">root mean squared error (RMSE)</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>RMSE train</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/accuracy -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/accuracy">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>model accuracy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/acronym -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/acronym">
@@ -792,6 +923,28 @@
         <obo:IAO_0000115>An executable causes a computer to perform indicated tasks according to encoded instructions.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">executable name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/explainable_range_max -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/explainable_range_max">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001319"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>explainable range max</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/explainable_range_min -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/explainable_range_min">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001319"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>explainable range min</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -874,6 +1027,17 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/non-standardized_value -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/non-standardized_value">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000316"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>non-standardized value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/section -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/section">
@@ -881,6 +1045,18 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">section</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/standardized_value -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/standardized_value">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000316"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normalized value</obo:IAO_0000118>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standardized value</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9347,22 +9523,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
-    <!-- nuclear:001318 -->
-
-    <owl:DatatypeProperty rdf:about="nuclear:001318">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000316"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>normalized value</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- nuclear:001319 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001319">
         <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>influence</rdfs:label>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>explanation number</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9371,8 +9537,9 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001320">
         <rdfs:subPropertyOf rdf:resource="nuclear:001319"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>influence weight</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>explainable influence weight</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9382,7 +9549,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <owl:DatatypeProperty rdf:about="nuclear:001321">
         <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>explanation</rdfs:label>
+        <rdfs:label>explanation text</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9391,8 +9558,9 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001322">
         <rdfs:subPropertyOf rdf:resource="nuclear:001321"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>rationale</rdfs:label>
+        <rdfs:label>explainable rationale</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -10088,82 +10256,93 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/MachineLearning">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115>A machine learning item is the use and development of computer systems that are able to learn and adapt without following explicit instructions, by using algorithms and statistical models to analyze and draw inferences from patterns in data.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial Intelligence</obo:IAO_0000118>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML</obo:IAO_0000118>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">MachineLearningItem</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/idaholab/DIAMOND/MachineLearningDataType -->
-
-    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/MachineLearningDataType">
-        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000717"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningModel"/>
+                <owl:onProperty rdf:resource="nuclear:000184"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/machine_learning_data_type"/>
+                <owl:onProperty rdf:resource="nuclear:000184"/>
+                <owl:someValuesFrom rdf:resource="nuclear:001258"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/Loss_train"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/MAE_test"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/MAE_train"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/MSE_test"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/MSE_train"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/R2_test"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/R2_train"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/RMSE_test"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/RMSE_train"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/explainable_range_max"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/explainable_range_min"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/non-standardized_value"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/machine_learning_dataset"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A machine learning data category describes whether the type of data is observed, fitted, or residuals and and whether the dataset used for training, validation, or testing.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">MachineLearningDataCategory</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/idaholab/DIAMOND/MachineLearningModel -->
-
-    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/MachineLearningModel">
-        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000672"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningDataType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000672"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningModelError"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/file_id"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000283"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000365"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000454"/>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/standardized_value"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10179,38 +10358,24 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A machine learning model is a file that has been trained to recognize certain types of patterns. You train a model over a set of data, providing it an algorithm that it can use to reason over and learn from those data.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">MachineLearningModel</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/idaholab/DIAMOND/MachineLearningModelError -->
-
-    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/MachineLearningModelError">
-        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000717"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningModel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/machine_learning_dataset"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000900"/>
+                <owl:onProperty rdf:resource="nuclear:001320"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A machine learning model accuracy is the measurement used to determine which model is best at identifying relationships and patterns between variables in a dataset based on the input, or training, data.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001322"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A machine learning item is the use and development of computer systems that are able to learn and adapt without following explicit instructions, by using algorithms and statistical models to analyze and draw inferences from patterns in data.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial Intelligence</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">MachineLearningModelAccuracy</rdfs:label>
+        <rdfs:label xml:lang="en">MachineLearningItem</rdfs:label>
     </owl:Class>
     
 
@@ -10404,6 +10569,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000133"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000185"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -19759,12 +19930,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000184"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningDataType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000184"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000691"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -19772,12 +19937,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001283"/>
                 <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/HeatPipe"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001283"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearningModel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -24199,7 +24358,7 @@ Maintenance of active vendors ensures that orders are placed with active vendors
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000185"/>
-                <owl:someValuesFrom rdf:resource="nuclear:001314"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -24403,63 +24562,10 @@ Maintenance of active vendors ensures that orders are placed with active vendors
     
 
 
-    <!-- nuclear:001314 -->
-
-    <owl:Class rdf:about="nuclear:001314">
-        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000184"/>
-                <owl:someValuesFrom rdf:resource="nuclear:001258"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000217"/>
-                <owl:someValuesFrom rdf:resource="nuclear:001325"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001009"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001199"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001317"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001323"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001324"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A prediciton is a machine learning item that contains a prediction regarding some subject or entity.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>Prediction</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- nuclear:001315 -->
 
     <owl:Class rdf:about="nuclear:001315">
-        <rdfs:subClassOf rdf:resource="nuclear:001314"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
         <obo:IAO_0000115>A classification is a prediction that is determined via a classification algorithm.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>Classification</rdfs:label>
@@ -24470,57 +24576,10 @@ Maintenance of active vendors ensures that orders are placed with active vendors
     <!-- nuclear:001316 -->
 
     <owl:Class rdf:about="nuclear:001316">
-        <rdfs:subClassOf rdf:resource="nuclear:001314"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
         <obo:IAO_0000115>A regression is a prediction that is determined via a regression algorithm.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>Regression</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- nuclear:001325 -->
-
-    <owl:Class rdf:about="nuclear:001325">
-        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000185"/>
-                <owl:someValuesFrom rdf:resource="nuclear:001327"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000218"/>
-                <owl:someValuesFrom rdf:resource="nuclear:001314"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001009"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001199"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001318"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001326"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A prediciton data item is a machine learning item that contains data supporting a prediction.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>PredictionDataItem</rdfs:label>
     </owl:Class>
     
 
@@ -24529,12 +24588,6 @@ Maintenance of active vendors ensures that orders are placed with active vendors
 
     <owl:Class rdf:about="nuclear:001327">
         <rdfs:subClassOf rdf:resource="nuclear:000118"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000184"/>
-                <owl:someValuesFrom rdf:resource="nuclear:001325"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001320"/>
