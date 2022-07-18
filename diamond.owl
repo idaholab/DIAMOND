@@ -933,7 +933,7 @@
         <rdfs:subPropertyOf rdf:resource="nuclear:001319"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label>explainable range max</rdfs:label>
+        <rdfs:label>explainable ranges max</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -944,7 +944,7 @@
         <rdfs:subPropertyOf rdf:resource="nuclear:001319"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label>explainable range min</rdfs:label>
+        <rdfs:label>explainable ranges min</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1032,8 +1032,9 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/non-standardized_value">
         <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/value_list"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <obo:IAO_0000118>non-normalized values</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label>non-standardized value</rdfs:label>
+        <rdfs:label>non-standardized values</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1054,9 +1055,9 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/standardized_value">
         <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/value_list"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normalized value</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normalized values</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standardized value</rdfs:label>
+        <rdfs:label>standardized values</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9549,7 +9550,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="nuclear:001319"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
         <dc:creator>Katherine Wilsdon</dc:creator>
-        <rdfs:label>explainable influence weight</rdfs:label>
+        <rdfs:label>explainable influence weights</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9560,7 +9561,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="nuclear:001319"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>explainable rationale</rdfs:label>
+        <rdfs:label>explainable rationales</rdfs:label>
     </owl:DatatypeProperty>
     
 
