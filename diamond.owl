@@ -931,7 +931,7 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/explainable_range_max">
         <rdfs:subPropertyOf rdf:resource="nuclear:001319"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label>explainable range max</rdfs:label>
     </owl:DatatypeProperty>
@@ -942,7 +942,7 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/explainable_range_min">
         <rdfs:subPropertyOf rdf:resource="nuclear:001319"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label>explainable range min</rdfs:label>
     </owl:DatatypeProperty>
@@ -1030,8 +1030,8 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     <!-- https://github.com/idaholab/DIAMOND/non-standardized_value -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/non-standardized_value">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000316"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/value_list"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label>non-standardized value</rdfs:label>
     </owl:DatatypeProperty>
@@ -1052,11 +1052,21 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     <!-- https://github.com/idaholab/DIAMOND/standardized_value -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/standardized_value">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000316"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/value_list"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normalized value</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standardized value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/value_list -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/value_list">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001311"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>value list</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9526,9 +9536,9 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001319 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001319">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:001311"/>
         <dc:creator>Katherine Wilsdon</dc:creator>
-        <rdfs:label>explanation number</rdfs:label>
+        <rdfs:label>explanation</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9537,19 +9547,9 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:DatatypeProperty rdf:about="nuclear:001320">
         <rdfs:subPropertyOf rdf:resource="nuclear:001319"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
         <dc:creator>Katherine Wilsdon</dc:creator>
         <rdfs:label>explainable influence weight</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- nuclear:001321 -->
-
-    <owl:DatatypeProperty rdf:about="nuclear:001321">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>explanation text</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9557,8 +9557,8 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001322 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001322">
-        <rdfs:subPropertyOf rdf:resource="nuclear:001321"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:001319"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>explainable rationale</rdfs:label>
     </owl:DatatypeProperty>
@@ -10325,25 +10325,25 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/explainable_range_max"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/explainable_range_min"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/non-standardized_value"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/standardized_value"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10361,13 +10361,13 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001320"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001322"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A machine learning item is the use and development of computer systems that are able to learn and adapt without following explicit instructions, by using algorithms and statistical models to analyze and draw inferences from patterns in data.</obo:IAO_0000115>
