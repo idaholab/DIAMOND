@@ -10156,6 +10156,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/Parameter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000294"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/PredictiveModel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The study of the effects of manufacturing process parameters on the resultant sample performance.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brennan Harris</dc:creator>
         <rdfs:label xml:lang="en">ParameterStudy</rdfs:label>
@@ -10206,6 +10212,29 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>The record of a build instance and the parameters that defined it along with the sample&apos;s recorded performance.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brennan Harris</dc:creator>
         <rdfs:label xml:lang="en">ParameterStudyRecord</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/AMBER/PredictiveModel -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/AMBER/PredictiveModel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000295"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/AMBER/ParameterStudy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000329"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A computational model that predicts for a sample output using given inputs</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>PredictiveModel</rdfs:label>
     </owl:Class>
     
 
