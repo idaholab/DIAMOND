@@ -802,6 +802,17 @@
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/drf_number -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/drf_number">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <obo:IAO_0000115>The DRF number returned per drawing and document in a DCR request</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>drf number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/engineering_change_status -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/engineering_change_status">
@@ -820,8 +831,14 @@
                                 <rdf:rest>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>passed</rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                        <rdf:first>partial</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>passed</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
                                     </rdf:Description>
                                 </rdf:rest>
                             </rdf:Description>
@@ -9927,6 +9944,17 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/EngineeringChangeDCR -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeDCR">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/EngineeringChangeStatus"/>
+        <obo:IAO_0000115>The completion status of the DCR request</obo:IAO_0000115>
+        <dc:creator>Brennan Harris</dc:creator>
+        <rdfs:label>EngineeringChangeDCR</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/EngineeringChangeStatus -->
 
     <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeStatus">
@@ -10024,6 +10052,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/drf_number"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/facility_code"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -10066,6 +10100,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/document_type"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/drf_number"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -24617,6 +24657,7 @@ Maintenance of active vendors ensures that orders are placed with active vendors
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeComplete"/>
+            <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeDCR"/>
             <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeSync"/>
             <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeUpdate"/>
             <rdf:Description rdf:about="https://github.com/idaholab/DIAMOND/EngineeringChangeUpload"/>
