@@ -10945,6 +10945,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
