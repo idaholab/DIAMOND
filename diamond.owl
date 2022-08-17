@@ -888,7 +888,7 @@
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/accuracy">
         <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label>model accuracy</rdfs:label>
+        <rdfs:label>accuracy</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -900,6 +900,51 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">acronym</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/bin_counts -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/bin_counts">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/bins"/>
+        <obo:IAO_0000115>Bin counts are a list of the number of counts per bin along the vertical axis or y axis of a histogram.</obo:IAO_0000115>
+        <obo:IAO_0000118>distribution frequency of a bin variable</obo:IAO_0000118>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">bin counts</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/bin_variable_names -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/bin_variable_names">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/bins"/>
+        <obo:IAO_0000115>Bin variable names are a list of variables that name each bin along the horizontal axis or x axis of a histogram.</obo:IAO_0000115>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">bin variable names</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/bins -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/bins">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001311"/>
+        <obo:IAO_0000118>Bins are grouping data into &quot;intervals&quot; of equal width typically to visualize a histogram.</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">intervals, classes, buckets</obo:IAO_0000118>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">bins</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/constant_power_flag -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/constant_power_flag">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">constant power flag</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1027,6 +1072,16 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/no_diversion_probability -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/no_diversion_probability">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">no diversion probability</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/non-standardized_value -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/non-standardized_value">
@@ -1039,6 +1094,37 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/relative_efficiency -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/relative_efficiency">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">relative efficiency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/scenario_probability_names -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/scenario_probability_names">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/scenarios"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">scenario probability names</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/scenarios -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/scenarios">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001311"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">scenarios</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/section -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/section">
@@ -1046,6 +1132,16 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">section</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/size -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/size">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>size</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3915,7 +4011,7 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     <!-- nuclear:000622 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:000622">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:001339"/>
         <obo:IAO_0000118>NRR</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">noise reduction rating</rdfs:label>
@@ -9610,7 +9706,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001337 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001337">
-        <rdfs:subPropertyOf rdf:resource="nuclear:001342"/>
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/size"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>sample size</rdfs:label>
     </owl:DatatypeProperty>
@@ -9620,7 +9716,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001338 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001338">
-        <rdfs:subPropertyOf rdf:resource="nuclear:001342"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>sampling frequency</rdfs:label>
     </owl:DatatypeProperty>
@@ -9630,7 +9726,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001339 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001339">
-        <rdfs:subPropertyOf rdf:resource="nuclear:001342"/>
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>noise</rdfs:label>
     </owl:DatatypeProperty>
@@ -9640,7 +9736,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001340 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001340">
-        <rdfs:subPropertyOf rdf:resource="nuclear:001342"/>
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/size"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>bin size</rdfs:label>
     </owl:DatatypeProperty>
@@ -9650,19 +9746,9 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001341 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001341">
-        <rdfs:subPropertyOf rdf:resource="nuclear:001342"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>number of trials</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- nuclear:001342 -->
-
-    <owl:DatatypeProperty rdf:about="nuclear:001342">
         <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>machine learning data point</rdfs:label>
+        <rdfs:label>number of trials</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9677,22 +9763,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
-    <!-- nuclear:001344 -->
-
-    <owl:DatatypeProperty rdf:about="nuclear:001344">
-        <rdfs:subPropertyOf rdf:resource="nuclear:001342"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>accuracy</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- nuclear:001345 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001345">
-        <rdfs:subPropertyOf rdf:resource="nuclear:001344"/>
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/scenarios"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>scenario accuracy</rdfs:label>
+        <rdfs:label>scenario probabilities</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9700,9 +9776,9 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:001346 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001346">
-        <rdfs:subPropertyOf rdf:resource="nuclear:001344"/>
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>diversion accuracy</rdfs:label>
+        <rdfs:label>diversion probability</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9717,87 +9793,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
-    <!-- nuclear:001355 -->
-
-    <owl:DatatypeProperty rdf:about="nuclear:001355">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>diversion count</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- nuclear:001356 -->
-
-    <owl:DatatypeProperty rdf:about="nuclear:001356">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>non-diversion count</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- nuclear:001357 -->
 
     <owl:DatatypeProperty rdf:about="nuclear:001357">
         <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>diversion flag</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- nuclear:001359 -->
-
-    <owl:DatatypeProperty rdf:about="nuclear:001359">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:comment>0 pebble diversion Burn Up count</rdfs:comment>
-        <rdfs:label>0PebDiv BU count</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- nuclear:001360 -->
-
-    <owl:DatatypeProperty rdf:about="nuclear:001360">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:comment>1 pebble diversion Burn Up count</rdfs:comment>
-        <rdfs:label>1PebDiv BU count</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- nuclear:001361 -->
-
-    <owl:DatatypeProperty rdf:about="nuclear:001361">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:comment>2 pebble diversion Burn Up count</rdfs:comment>
-        <rdfs:label>2PebDiv BU count</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- nuclear:001362 -->
-
-    <owl:DatatypeProperty rdf:about="nuclear:001362">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:comment>3 pebble diversion Burn Up count</rdfs:comment>
-        <rdfs:label>3PebDiv BU count</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- nuclear:001363 -->
-
-    <owl:DatatypeProperty rdf:about="nuclear:001363">
-        <rdfs:subPropertyOf rdf:resource="nuclear:000423"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:comment>4 pebble diversion Burn Up count</rdfs:comment>
-        <rdfs:label>4PebDiv BU count</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -10230,6 +10231,17 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/Graph -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/Graph">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>A graph is a diagram that represents the variation of a variable in comparison with that of one or more other variables.</obo:IAO_0000115>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">Graph</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/HeatPipe -->
 
     <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/HeatPipe">
@@ -10249,6 +10261,35 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>A heat pipe is a heat-transfer device that combines the principles of both thermal conductivity and phase transition to effectively transfer heat between two solid interfaces.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">HeatPipe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/Histogram -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/Histogram">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/Graph"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/PebbleDiversionAnalysis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/bin_counts"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/bin_variable_names"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A histogram is a graph that shows the frequency of numerical data by grouping data into bins of equal width.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">Histogram</rdfs:label>
     </owl:Class>
     
 
@@ -10377,6 +10418,107 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">MachineLearningItem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/PebbleBedReactor -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/PebbleBedReactor">
+        <rdfs:subClassOf rdf:resource="nuclear:000012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/constant_power_flag"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/relative_efficiency"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001337"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001338"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001339"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001340"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Pebble bed reactors (PBRs) are an advanced reactor concept which employs the continual feeding and removing of fuel pebbles to maintain a critical core and produce power.</obo:IAO_0000115>
+        <obo:IAO_0000118>high temperature gas cooled reactor (HTGR)</obo:IAO_0000118>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">PebbleBedReactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/PebbleDiversionAnalysis -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/PebbleDiversionAnalysis">
+        <rdfs:subClassOf rdf:resource="nuclear:000160"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000184"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/PebbleBedReactor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000217"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/Histogram"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/no_diversion_probability"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/scenario_probability_names"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001345"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001346"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001357"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A pebble diversion analysis is an analysis document that contains details related to the diversion analysis of fuel pebbles from a pebble bed reactor.</obo:IAO_0000115>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">PebbleDiversionAnalysis</rdfs:label>
     </owl:Class>
     
 
@@ -24551,28 +24693,6 @@ Maintenance of active vendors ensures that orders are placed with active vendors
     
 
 
-    <!-- nuclear:001315 -->
-
-    <owl:Class rdf:about="nuclear:001315">
-        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
-        <obo:IAO_0000115>A classification is a prediction that is determined via a classification algorithm.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>Classification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- nuclear:001316 -->
-
-    <owl:Class rdf:about="nuclear:001316">
-        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/MachineLearning"/>
-        <obo:IAO_0000115>A regression is a prediction that is determined via a regression algorithm.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>Regression</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- nuclear:001327 -->
 
     <owl:Class rdf:about="nuclear:001327">
@@ -24621,112 +24741,6 @@ Maintenance of active vendors ensures that orders are placed with active vendors
         <obo:IAO_0000115>A supervisory control request is a work instruction that is generated by some supervisory control or programmable logic controller system.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label>SupervisoryControlRequest</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- nuclear:001354 -->
-
-    <owl:Class rdf:about="nuclear:001354">
-        <rdfs:subClassOf rdf:resource="nuclear:001315"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001337"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001338"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001339"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001340"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001341"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001343"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001345"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001346"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001355"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001356"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001357"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001359"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001360"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001361"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001362"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:001363"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>DiversionClassification</rdfs:label>
     </owl:Class>
     
 
