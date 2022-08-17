@@ -1077,7 +1077,7 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/no_diversion_probability">
         <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/accuracy"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">no diversion probability</rdfs:label>
+        <rdfs:label xml:lang="en">non-diversion probability</rdfs:label>
     </owl:DatatypeProperty>
     
 
