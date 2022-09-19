@@ -904,41 +904,6 @@
     
 
 
-    <!-- https://github.com/idaholab/DIAMOND/bin_counts -->
-
-    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/bin_counts">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/bins"/>
-        <obo:IAO_0000115>Bin counts are a list of the number of counts per bin along the vertical axis or y axis of a histogram.</obo:IAO_0000115>
-        <obo:IAO_0000118>distribution frequency of a bin variable</obo:IAO_0000118>
-        <dc:creator>Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">bin counts</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/idaholab/DIAMOND/bin_variable_names -->
-
-    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/bin_variable_names">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/bins"/>
-        <obo:IAO_0000115>Bin variable names are a list of variables that name each bin along the horizontal axis or x axis of a histogram.</obo:IAO_0000115>
-        <dc:creator>Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">bin variable names</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://github.com/idaholab/DIAMOND/bins -->
-
-    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/bins">
-        <rdfs:subPropertyOf rdf:resource="nuclear:001311"/>
-        <obo:IAO_0000118>Bins are grouping data into &quot;intervals&quot; of equal width typically to visualize a histogram.</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">intervals, classes, buckets</obo:IAO_0000118>
-        <dc:creator>Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">bins</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://github.com/idaholab/DIAMOND/constant_power_flag -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/constant_power_flag">
@@ -1001,6 +966,28 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">file id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/graph -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/graph">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001311"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>graph list</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/graph_string -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/graph_string">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>graph string</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1175,6 +1162,50 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/x_axis_name -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/x_axis_name">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/graph_string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>x axis name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/x_variables -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/x_variables">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/graph"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>x variables</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/y_axis_name -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/y_axis_name">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/graph_string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>y axis name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/y_variables -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/y_variables">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/graph"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>y variables</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -10235,7 +10266,38 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/Graph">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000218"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/PebbleDiversionAnalysis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/x_axis_name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/x_variables"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/y_axis_name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/y_variables"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A graph is a diagram that represents the variation of a variable in comparison with that of one or more other variables.</obo:IAO_0000115>
+        <obo:IAO_0000118>plot</obo:IAO_0000118>
         <dc:creator>Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">Graph</rdfs:label>
     </owl:Class>
@@ -10261,35 +10323,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>A heat pipe is a heat-transfer device that combines the principles of both thermal conductivity and phase transition to effectively transfer heat between two solid interfaces.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">HeatPipe</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/idaholab/DIAMOND/Histogram -->
-
-    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/Histogram">
-        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/Graph"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000218"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/PebbleDiversionAnalysis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/bin_counts"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/bin_variable_names"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A histogram is a graph that shows the frequency of numerical data by grouping data into bins of equal width.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">Histogram</rdfs:label>
     </owl:Class>
     
 
@@ -10483,7 +10516,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000217"/>
-                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/Histogram"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/Graph"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
