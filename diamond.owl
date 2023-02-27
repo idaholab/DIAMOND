@@ -904,6 +904,16 @@
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/channel_number -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/channel_number">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">channel number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/constant_power_flag -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/constant_power_flag">
@@ -1088,6 +1098,27 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:creator>Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">relative efficiency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/sampling_frequency_average -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/sampling_frequency_average">
+        <rdfs:subPropertyOf rdf:resource="nuclear:001338"/>
+        <obo:IAO_0000115>A sample frequency average is the average number of &quot;sample frequency&quot; points to generate a recorded data point.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">sampling frequency average</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/sampling_frequency_units -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/sampling_frequency_units">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label>sampling frequency units</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -10451,6 +10482,49 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML</obo:IAO_0000118>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">MachineLearningItem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/OpticalSpectrometer -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/OpticalSpectrometer">
+        <rdfs:subClassOf rdf:resource="nuclear:000688"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/channel_number"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/sampling_frequency_average"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/sampling_frequency_units"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000278"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001338"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A spectrometer measures the intensity of light as a function of wavelength or of frequency via refraction in a prism or diffraction by a diffraction grating.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">Optical absorption spectrometer</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Optical spectrometer</obo:IAO_0000118>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">Spectrometer</rdfs:label>
     </owl:Class>
     
 
