@@ -883,6 +883,17 @@
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/ac_coupling -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/ac_coupling">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/coupling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">ac coupling</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/accuracy -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/accuracy">
@@ -904,6 +915,105 @@
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/author -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/author">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">author</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/calibrated_by -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/calibrated_by">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000416"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">calibrated by</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/calibration -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/calibration">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">calibration</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/calibration_date -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/calibration_date">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000411"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">calibration date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/calibration_initials -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/calibration_initials">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/calibration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">calibration initials</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/calibration_period_days -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/calibration_period_days">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/calibration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">calibration period days</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/channel -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/channel">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">channel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/channel_length -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/channel_length">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/channel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">channel length</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/channel_name -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/channel_name">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/channel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">channel name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/channel_number -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/channel_number">
@@ -914,12 +1024,54 @@
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/color -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/color">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">color</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/constant_power_flag -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/constant_power_flag">
         <rdfs:subPropertyOf rdf:resource="nuclear:000789"/>
         <dc:creator>Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">constant power flag</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/coupling -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/coupling">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000410"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>coupling</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/data_type -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/data_type">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">data type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/dc_coupling -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/dc_coupling">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/coupling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">dc coupling</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1002,6 +1154,17 @@
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/increment -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/increment">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">increment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/machine_learning_data_type -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/machine_learning_data_type">
@@ -1069,6 +1232,94 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/manufacturer_id -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/manufacturer_id">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000477"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>manufacturer id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/mapping -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/mapping">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">mapping</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/measurement_location_id -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/measurement_location_id">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">measurement location id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/microphone -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/microphone">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">microphone</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/microphone_size -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/microphone_size">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/microphone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">microphone size</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/microphone_type -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/microphone_type">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/microphone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">microphone type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/microphone_volume -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/microphone_volume">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/microphone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">microphone volume</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/model_number -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/model_number">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">model number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/no_diversion_probability -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/no_diversion_probability">
@@ -1091,6 +1342,71 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/output_bias -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/output_bias">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>output bias</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/physical_channel -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/physical_channel">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/channel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">physical channel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/polarity_sign -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/polarity_sign">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">polarity sign</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/polarization_voltage -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/polarization_voltage">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">polarization voltage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/positon -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/positon">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">position</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/reference_frequency -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/reference_frequency">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000566"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">reference frequency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/relative_efficiency -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/relative_efficiency">
@@ -1102,13 +1418,24 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/samples -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/samples">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">samples</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/sampling_frequency_average -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/sampling_frequency_average">
         <rdfs:subPropertyOf rdf:resource="nuclear:001338"/>
-        <obo:IAO_0000115>A sample frequency average is the average number of &quot;sample frequency&quot; points to generate a recorded data point.</obo:IAO_0000115>
+        <obo:IAO_0000115>A sample rate average is the average number of &quot;sample rate&quot; points to generate a recorded data point.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label xml:lang="en">sampling frequency average</rdfs:label>
+        <rdfs:label xml:lang="en">sample rate average</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1118,7 +1445,7 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/sampling_frequency_units">
         <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
-        <rdfs:label>sampling frequency units</rdfs:label>
+        <rdfs:label xml:lang="en">sample rate unit</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1154,6 +1481,49 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/sensitivity -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/sensitivity">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>sensitivity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/sensitivity_reference_condition -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/sensitivity_reference_condition">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/sensitivity"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">sensitivity reference condition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/sensor_type -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/sensor_type">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">sensor type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/serial_number -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/serial_number">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">serial number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/size -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/size">
@@ -1176,6 +1546,115 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/start_offset -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/start_offset">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>start offset</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/start_time -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/start_time">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000854"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label>start time</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/start_time_epoch -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/start_time_epoch">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">start time epoch</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/start_time_fraction -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/start_time_fraction">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">start time fraction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/start_time_nanoseconds -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/start_time_nanoseconds">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">start time nanosecond</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/start_time_radix -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/start_time_radix">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">start time radix</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/start_time_seconds -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/start_time_seconds">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">start time seconds</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/title -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/title">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/transducer_electrical_signal_type -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/transducer_electrical_signal_type">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">transducer electrical signal type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/user_data -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/user_data">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000416"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">user data</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/value_list -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/value_list">
@@ -1193,6 +1672,39 @@ test: a dataset used to provide an unbiased evaluation of a final model fit on t
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/version_letter -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/version_letter">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/version_string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">version letter</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/version_number -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/version_number">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/idaholab/DIAMOND/version_string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">version number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/version_string -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/idaholab/DIAMOND/version_string">
+        <rdfs:subPropertyOf rdf:resource="nuclear:000413"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">version string</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9780,7 +10292,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <owl:DatatypeProperty rdf:about="nuclear:001338">
         <rdfs:subPropertyOf rdf:resource="nuclear:000412"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
-        <rdfs:label>sampling frequency</rdfs:label>
+        <rdfs:label>sample rate</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -10264,6 +10776,95 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/AcousticSensor -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/AcousticSensor">
+        <rdfs:subClassOf rdf:resource="nuclear:000079"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/channel"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/channel_length"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/channel_name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/increment"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/output_bias"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/physical_channel"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/positon"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/samples"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/sensitivity"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/start_offset"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/start_time"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/start_time_radix"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/start_time_seconds"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An acoustic sensor is a sensor that transduces surface acoustic waves into an electrical signal to to sense a physical phenomenon.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">AcousticSensor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/CartridgeHeater -->
 
     <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/CartridgeHeater">
@@ -10289,6 +10890,98 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>A cartridge heater is a tube-shaped, heavy-duty, industrial Joule heating element used in the process heating industry, usually custom manufactured to a specific watt density,based on its intended application.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">CartridgeHeater</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/ChemistrySensor -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/ChemistrySensor">
+        <rdfs:subClassOf rdf:resource="nuclear:000079"/>
+        <obo:IAO_0000115>An analytical sensor is an analytical device that can provide information about the chemical composition of its environment.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">AnalyticalSensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/ColorimetricSensor -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/ColorimetricSensor">
+        <rdfs:subClassOf rdf:resource="nuclear:000688"/>
+        <obo:IAO_0000115>A colorimetric sensor is an optical sensor that measures the color change of a solution.</obo:IAO_0000115>
+        <dc:creator>Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">ColorimetricSensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/ConductivitySensor -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/ConductivitySensor">
+        <rdfs:subClassOf rdf:resource="nuclear:000079"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A conductivity sensor is a sensor used to measure the conductivity of various solutions.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">ConductivitySensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/Experiment -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/Experiment">
+        <rdfs:subClassOf rdf:resource="nuclear:000129"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001283"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/AcousticSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001283"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001283"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/author"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/title"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000411"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000504"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000719"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A experiment is a scientific test, trial, or procedure for the purpose of making a discovery, testing a hypothesis, or demonstrating a known fact.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">Experiment</rdfs:label>
     </owl:Class>
     
 
@@ -10486,6 +11179,17 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/MassScale -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/MassScale">
+        <rdfs:subClassOf rdf:resource="nuclear:000079"/>
+        <dc:creator>A mass scale is a scale or balance that is used to measure weight or mass.</dc:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">MassScale</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/OpticalSpectrometer -->
 
     <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/OpticalSpectrometer">
@@ -10677,6 +11381,23 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     
 
 
+    <!-- https://github.com/idaholab/DIAMOND/UserEvent -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/UserEvent">
+        <rdfs:subClassOf rdf:resource="nuclear:000315"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001282"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/Experiment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An user event is an event that occurs by a user.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">UserEvent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/idaholab/DIAMOND/Version -->
 
     <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/Version">
@@ -10696,6 +11417,28 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <obo:IAO_0000115>A version is assigned either unique version names or unique version numbers to unique state of computer software.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
         <rdfs:label xml:lang="en">Version</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/VolumeSensor -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/VolumeSensor">
+        <rdfs:subClassOf rdf:resource="nuclear:000079"/>
+        <obo:IAO_0000115>A fluid volume sensor is a sensor that determines the volume of a liquid within a container.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">FluidVolumeSensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/idaholab/DIAMOND/pHElectrode -->
+
+    <owl:Class rdf:about="https://github.com/idaholab/DIAMOND/pHElectrode">
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/ChemistrySensor"/>
+        <obo:IAO_0000115>A pH electrode is an analytical sensor for measuring acidity and alkalinity of a solution (pH) through the negative logarithm of the hydrogen ion activity.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherine Wilsdon</dc:creator>
+        <rdfs:label xml:lang="en">pHElectrode</rdfs:label>
     </owl:Class>
     
 
@@ -12370,6 +13113,108 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/Range"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000672"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/ColorimetricSensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000672"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/ConductivitySensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000672"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/MassScale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000672"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/pHElectrode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000672"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000692"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:000717"/>
+                <owl:someValuesFrom rdf:resource="nuclear:000079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001282"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/idaholab/DIAMOND/Experiment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/calibrated_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/calibration_date"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/manufacturer_id"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/model_number"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/sensor_type"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/serial_number"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/user_data"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/version_letter"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/version_number"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001198"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sensor is an equipment that transmits data points either automatically (through wire or WiFi) or through intermittent manual uploads.</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/calibration_profile"/>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/condition_reporting_profile"/>
@@ -12445,7 +13290,157 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000085">
         <rdfs:subClassOf rdf:resource="nuclear:000079"/>
-        <obo:IAO_0000115>A vibration sensor is a sensor that measures the movement of some entity.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/ac_coupling"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/calibration_initials"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/calibration_period_days"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/channel"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/channel_length"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/channel_name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/dc_coupling"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/increment"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/mapping"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/measurement_location_id"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/microphone_size"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/microphone_type"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/microphone_volume"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/physical_channel"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/polarity_sign"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/polarization_voltage"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/positon"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/reference_frequency"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/samples"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/sensitivity_reference_condition"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/start_offset"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/start_time"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/start_time_radix"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/start_time_seconds"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/idaholab/DIAMOND/transducer_electrical_signal_type"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vibration sensor is a sensor that measures the movement or acceleration of motion of some entity.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">VibrationSensor</rdfs:label>
     </owl:Class>
@@ -14540,7 +15535,7 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
     <!-- nuclear:000163 -->
 
     <owl:Class rdf:about="nuclear:000163">
-        <rdfs:subClassOf rdf:resource="nuclear:000079"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/idaholab/DIAMOND/AcousticSensor"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An acoustic emissions sensor is a sensor that captures the transient acoustic pulse of an object.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeren Browning</dc:creator>
         <rdfs:label xml:lang="en">AcousticEmissionsSensor</rdfs:label>
