@@ -13215,6 +13215,12 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="nuclear:001290"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sensor is an equipment that transmits data points either automatically (through wire or WiFi) or through intermittent manual uploads.</obo:IAO_0000115>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/calibration_profile"/>
         <obo:profile rdf:resource="http://purl.obolibrary.org/obo/condition_reporting_profile"/>
