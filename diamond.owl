@@ -14555,12 +14555,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000217"/>
-                <owl:someValuesFrom rdf:resource="nuclear:000107"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000217"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000380"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -16346,12 +16340,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="nuclear:000026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000217"/>
-                <owl:someValuesFrom rdf:resource="nuclear:000107"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000590"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -16787,12 +16775,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
 
     <owl:Class rdf:about="nuclear:000342">
         <rdfs:subClassOf rdf:resource="nuclear:000026"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000217"/>
-                <owl:someValuesFrom rdf:resource="nuclear:000049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000588"/>
@@ -18999,12 +18981,6 @@ WB diferentiates this dose as the SDE across the whole body</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="nuclear:000026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000217"/>
-                <owl:someValuesFrom rdf:resource="nuclear:000107"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000289"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000388"/>
             </owl:Restriction>
@@ -20912,12 +20888,6 @@ November 2004</obo:IAO_0000119>
 
     <owl:Class rdf:about="nuclear:000734">
         <rdfs:subClassOf rdf:resource="nuclear:000086"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000217"/>
-                <owl:someValuesFrom rdf:resource="nuclear:001028"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:001030"/>
@@ -22895,12 +22865,6 @@ Maintenance of active vendors ensures that orders are placed with active vendors
             <owl:Restriction>
                 <owl:onProperty rdf:resource="nuclear:000217"/>
                 <owl:someValuesFrom rdf:resource="nuclear:000537"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="nuclear:000217"/>
-                <owl:someValuesFrom rdf:resource="nuclear:001028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
